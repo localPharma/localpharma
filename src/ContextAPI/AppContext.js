@@ -8,6 +8,7 @@ import {
   signInWithPopup,
   signOut,
   sendPasswordResetEmail,
+  confirmPasswordReset,
 } from "firebase/auth";
 
 const AppContext = createContext({
@@ -17,6 +18,7 @@ const AppContext = createContext({
   loginWithGoogle: () => Promise, // Returns a promise
   logout: () => Promise, // Returns a promise
   forgotPassword: () => Promise, // Returns a promise
+  resetPassword: () => Promise, // Returns a promise
 });
 
 export const useAuth = () => useContext(AppContext);
@@ -41,8 +43,15 @@ const AppContextProvider = ({ children }) => {
   // Send User reset password email
   const forgotPassword = email => {
     return sendPasswordResetEmail(auth, email, {
-      url: "http:localhost:3000/login" || "https://localpharma.netlify.app",
+      url:
+        "http:localhost:3000/auth/signin" ||
+        "https://localpharma.netlify.app/auth/signin",
     });
+  };
+
+  // Reset User Password
+  const resetPassword = (oobCode, newPassword) => {
+    return confirmPasswordReset(auth, oobCode, newPassword);
   };
 
   // Logout the User
@@ -66,6 +75,7 @@ const AppContextProvider = ({ children }) => {
     loginWithGoogle,
     logout,
     forgotPassword,
+    resetPassword,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

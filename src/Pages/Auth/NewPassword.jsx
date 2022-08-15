@@ -3,6 +3,8 @@ import classes from "./Reset.module.css";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useHistory } from "react-router-dom";
+import { useAuth } from "../../ContextAPI/AppContext";
+import { useQuery } from "../../Hooks/useQuery";
 
 const NewPassword = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -10,21 +12,39 @@ const NewPassword = () => {
 
   const history = useHistory();
 
+  // Extracting oobCode, continueURL etc from the query...
+  const queryParams = useQuery();
+
+  const { resetPassword } = useAuth();
+
+  console.log("====================================");
+  console.log(queryParams);
+  console.log("====================================");
+
   const handleNewPassword = e => {
     e.preventDefault();
 
     // Condition to check if both newPassword and confirmNewPassword are same
     const isPasswordValid = (newPassword, confirmNewPassword) => {
-      const STRONG_PASSWORD_LENGTH = 8;
-
       if (newPassword || confirmNewPassword) {
         if (confirmNewPassword === newPassword) {
-          if (newPassword || confirmNewPassword <= STRONG_PASSWORD_LENGTH) {
-            alert("Password(s) are too short and unsecure.");
-            return false;
-          }
+          // Getting the oobCode from the search query
+          const oobCode = queryParams.get("oobCode");
+
+          resetPassword(oobCode, newPassword)
+            .then(res => {
+              console.log("====================================");
+              console.log(`Response => ${res}`);
+              console.log("====================================");
+
+              // Navigate user to the succes page...
+              history.push(
+                "/auth/reset-success" ||
+                  "https://localpharma.netlify.app/auth/rest-success"
+              );
+            })
+            .catch(err => console.log(err.message));
           alert("Password successfully reset");
-          history.push("/auth/reset-success");
         } else {
           alert("Passwords do not match");
           return false;
@@ -40,7 +60,9 @@ const NewPassword = () => {
     <div className={classes.reset}>
       <div className={classes.reset__heading}>
         <h3>Set new password</h3>
-        <p>Your new password must be different to previuosly used passwords.</p>
+        <p>
+          Your new password must be different to your previuosly used passwords.
+        </p>
       </div>
       <div className={classes.reset__form}>
         <form onSubmit={handleNewPassword}>

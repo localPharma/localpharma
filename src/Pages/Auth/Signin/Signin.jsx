@@ -16,24 +16,12 @@ const Signin = () => {
     e.preventDefault();
 
     login(email, password)
-      .then(userCredentials => {
-        console.log(userCredentials);
+      .then(() => {
         history.replace("/");
       })
       .catch(err => {
-        if (
-          err.message ===
-          "The password is invalid or the user does not have a password"
-        ) {
-          // Will use a Toast Component to display any warning or notification
-          alert("Please check your credentials again.");
-        } else if (
-          err.message ===
-          "There is no user corresponding to this identifier. The user may have been deleted."
-        ) {
-          // Will use a Toast Component to display any warning or notification
-          alert(err.message);
-        }
+        //: TODO catch all firebase error messages in a custom message notification...
+        alert(err.message);
       });
   };
 

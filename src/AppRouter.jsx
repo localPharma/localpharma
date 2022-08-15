@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// Components imports
+import Homepage from "./Pages/Homepage/Homepage";
 import Header from "./Components/Core/Header/Header";
 import Forgotpassword from "./Pages/Auth/ForgotPassword";
 import NewPassword from "./Pages/Auth/NewPassword";
@@ -7,9 +10,6 @@ import ResetComplete from "./Pages/Auth/ResetComplete";
 import Signin from "./Pages/Auth/Signin/Signin";
 import Signup from "./Pages/Auth/Signup/Signup";
 import VerifyEmail from "./Pages/Auth/VerifyEmail";
-
-// Components imports
-import Homepage from "./Pages/Homepage/Homepage";
 
 const AppRouter = () => {
   return (

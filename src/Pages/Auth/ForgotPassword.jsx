@@ -3,18 +3,28 @@ import classes from "./Reset.module.css";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useHistory } from "react-router-dom";
+import { useAuth } from "../../ContextAPI/AppContext";
 
 const Forgotpassword = () => {
   const [resetEmail, setResetEmail] = useState("");
 
   const history = useHistory();
 
+  const { forgotPassword } = useAuth();
+
   const handlePasswordReset = e => {
     e.preventDefault();
 
     if (resetEmail) {
-      alert("Password reset sent to your email");
-      history.push("/auth/verify");
+      forgotPassword(resetEmail)
+        .then(res => {
+          console.log("====================================");
+          console.log(res);
+          console.log("====================================");
+          alert("Password reset sent to your email");
+          history.push("/auth/verify");
+        })
+        .catch(err => alert(err.message));
     } else {
       alert("Please enter your email");
     }

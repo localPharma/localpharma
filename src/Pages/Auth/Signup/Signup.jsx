@@ -15,16 +15,15 @@ const Signup = () => {
   // Email and Password Signup Functionality
   const handleSignupWithEmailAndPassword = e => {
     e.preventDefault();
-
-    try {
-      register(email, password).then(userCredentials => {
+    register(email, password)
+      .then(userCredentials => {
         console.log(userCredentials);
+        alert("Registered");
         history.replace("/");
+      })
+      .catch(err => {
+        alert(err.message);
       });
-    } catch (err) {
-      alert(err.message);
-    }
-    alert("Registered");
   };
 
   // Google Authencticaton Functionality
@@ -34,7 +33,6 @@ const Signup = () => {
       .catch(err => {
         alert(err.message);
       });
-    // .catch(err => console.log(err.message));
   };
 
   return (
@@ -84,9 +82,9 @@ const Signup = () => {
                   placeholder='Enter your password'
                 />
               </div>
-              <div className={classes.forgot__psd}>
+              {/* <div className={classes.forgot__psd}>
                 <Link to='/auth/reset-password'>Forgot password?</Link>
-              </div>
+              </div> */}
             </div>
             <button className={classes.auth__btn}>Create account</button>
           </form>
