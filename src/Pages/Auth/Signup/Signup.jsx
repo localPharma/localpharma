@@ -4,7 +4,7 @@ import classes from "./Signup.module.css";
 import { useAuth } from "../../../ContextAPI/AppContext";
 
 const Signup = () => {
-  const [username, setUsername] = useState("");
+  // const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -48,7 +48,7 @@ const Signup = () => {
               <p>Let's get started with your account creation.</p>
             </div>
             <div className={classes.form__labels}>
-              <div className={classes.form__group}>
+              {/* <div className={classes.form__group}>
                 <label htmlFor='username'>Username</label>
                 <input
                   type='text'
@@ -59,7 +59,7 @@ const Signup = () => {
                   required
                   placeholder='Enter your username'
                 />
-              </div>
+              </div> */}
               <div className={classes.form__group}>
                 <label htmlFor='email'>Email</label>
                 <input
