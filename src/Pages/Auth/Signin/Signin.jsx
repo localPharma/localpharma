@@ -25,7 +25,7 @@ const Signin = () => {
       });
   };
 
-  // Google Authencticaton Functionality
+  // Google Authenticaton Functionality
   const handleSigninWithGoogle = () => {
     loginWithGoogle()
       .then(user => console.log(user))
@@ -39,7 +39,7 @@ const Signin = () => {
       <div className={classes.form__wrapper}>
         {/* Form */}
         <div className={classes.form__container}>
-          <form onSubmit={handleSigninWithEmailAndPassword}>
+          <form onSubmit={handleSigninWithEmailAndPassword} autoComplete='true'>
             <div className={classes.form__heading}>
               <h3>Welcome back</h3>
               <p>Welcome back! Please enter your credentials.</p>

@@ -84,3 +84,29 @@
   color: white;
   border-radius: 5px;
 }
+/* SELECT OPTIONS */
+.select {
+  padding: 7px;
+  border: 1px solid rgba(216, 216, 216, 0.82);
+  font-size: 14px;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.select option {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 3px;
+  color: rgb(50, 50, 50);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.select option:hover {
+  background-color: rgba(102, 179, 255, 0.735);
+}
+
+.select option:disabled {
+  color: gray;
+}

@@ -26,7 +26,7 @@ const Signup = () => {
       });
   };
 
-  // Google Authencticaton Functionality
+  // Google Authenticaton Functionality
   const handleSignupWithGoogle = () => {
     loginWithGoogle()
       .then(user => console.log(user))
