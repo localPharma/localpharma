@@ -1,0 +1,72 @@
+.pharmacy__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.heading h2 {
+  font-size: 32px;
+}
+
+
+
+/* PHARMACY VENDORS LISTS */
+.pharmacies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+  padding: 0 50px;
+  row-gap: 30px;
+  max-width: max-content;
+}
+
+
+
+
+/* PHARMARCY CARD */
+.pharmacy__card {
+  background-color: rgba(208, 208, 208, 0.546);
+  width: 400px;
+  max-width: 390px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pharmacy__card a {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pharmacy__card .image {
+  height: 250px;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.pharmacy__card .working_days {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  background-color: rgba(30, 143, 255, 0.387);
+  font-size: 14px;
+  color: white;
+  border-radius: 3px;
+}

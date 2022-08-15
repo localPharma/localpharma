@@ -1,0 +1,23 @@
+/* MINI CARDS */
+.mini__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 50px;
+  /* background-color: rgba(222, 222, 222, 0.563); */
+}
+
+.title {
+  font-size: 22px;
+}
+
+.mini__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}

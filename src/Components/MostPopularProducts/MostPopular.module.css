@@ -1,0 +1,74 @@
+.most__popular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px;
+  background-color: #fff;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title h3 {
+  font-size: 32px;
+}
+
+.popular__products_lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  max-width: 90%;
+}
+
+/* CARD */
+.drug__card {
+  width: 250px;
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card__img {
+  width: 100%;
+  background-color: dodgerblue;
+}
+
+.card__details {
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  text-overflow: ellipsis;
+}
+
+.card__details h2 {
+  font-size: 18px;
+}
+
+.card__details h3 {
+  font-size: 16px;
+}
+
+.card__details p {
+  font-size: 14px;
+  max-width: 300px;
+  text-overflow: ellipsis;
+}
