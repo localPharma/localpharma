@@ -6,7 +6,9 @@
 .form__wrapper {
   width: 100%;
   height: 100%;
-  background-color: gray;
+  display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .form__container {
@@ -73,11 +75,12 @@
 .form__group input {
   width: 100%;
   max-width: 350px;
-  padding: 7px 10px;
+  padding: 8px 10px;
   font-size: 16px;
   border: 1px solid rgba(176, 176, 176, 0.668);
   border-radius: 5px;
   caret-color: dodgerblue;
+  background-color: rgba(240, 240, 240, 0.626);
 }
 
 .form__group input:focus {
@@ -180,4 +183,11 @@
 .account__link p span a {
   color: dodgerblue;
   font-weight: 500;
+}
+.bg__img {
+  width: 60%;
+  height: 100%;
+  background-image: url('../../../assets/pharm2.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

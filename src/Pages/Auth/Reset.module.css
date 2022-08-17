@@ -1,0 +1,121 @@
+.reset {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.reset__heading {
+  width: 400px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.reset__heading h3 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.reset__heading p {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.reset__form {
+  width: 100%;
+  max-width: 400px;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  padding: 25px 30px;
+  margin-bottom: 50px;
+}
+
+.reset__form form {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reset__form_label {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.reset__form_label label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reset__form_label input {
+  width: 100%;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid rgba(176, 176, 176, 0.668);
+  border-radius: 5px;
+  caret-color: dodgerblue;
+  background-color: rgba(240, 240, 240, 0.4);
+}
+
+.reset__form_label input:focus {
+  outline: 2px solid rgba(112, 183, 255, 0.837);
+}
+
+.reset__form_label.invalid input:invalid {
+  outline: 2px solid rgba(255, 139, 139, 0.681);
+}
+
+.reset__form_label::placeholder {
+  color: black;
+}
+
+.reset__btn {
+  width: 100%;
+}
+
+.reset__btn button {
+  width: 100%;
+  padding: 10px 25px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  cursor: pointer;
+  max-width: 350px;
+  color: white;
+  transition: all 0.25s linear;
+}
+
+.reset__btn button:hover {
+  background-color: rgb(9, 121, 233);
+}
+
+
+/* GO BACK LINK */
+.go__back a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 10s ease-in-out;
+}
+
+.go__back a:hover .left__arrow {
+  transform: translateX(-30%);
+}
