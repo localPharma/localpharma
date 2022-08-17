@@ -43,9 +43,7 @@ const AppContextProvider = ({ children }) => {
   // Send User reset password email
   const forgotPassword = email => {
     return sendPasswordResetEmail(auth, email, {
-      url:
-        "http:localhost:3000/auth/signin" ||
-        "https://localpharma.netlify.app/auth/signin",
+      url: "https://localpharma.netlify.app/auth/signin",
     });
   };
 
