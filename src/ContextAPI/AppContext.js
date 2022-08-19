@@ -24,7 +24,7 @@ const AppContext = createContext({
 export const useAuth = () => useContext(AppContext);
 
 const AppContextProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(true);
 
   // Register User
   const register = (email, password) =>

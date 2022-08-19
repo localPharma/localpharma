@@ -3,8 +3,8 @@ import classes from "./Reset.module.css";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useHistory } from "react-router-dom";
-import { useAuth } from "../../ContextAPI/AppContext";
-import { useQuery } from "../../Hooks/useQuery";
+// import { useAuth } from "../../ContextAPI/AppContext";
+// import { useQuery } from "../../Hooks/useQuery";
 
 const NewPassword = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -13,13 +13,9 @@ const NewPassword = () => {
   const history = useHistory();
 
   // Extracting oobCode, continueURL etc from the query...
-  const queryParams = useQuery();
+  // const queryParams = useQuery();
 
-  const { resetPassword } = useAuth();
-
-  console.log("====================================");
-  console.log(queryParams);
-  console.log("====================================");
+  // const { resetPassword } = useAuth();
 
   const handleNewPassword = e => {
     e.preventDefault();
@@ -29,22 +25,29 @@ const NewPassword = () => {
       if (newPassword || confirmNewPassword) {
         if (confirmNewPassword === newPassword) {
           // Getting the oobCode from the search query
-          const oobCode = queryParams.get("oobCode");
 
-          resetPassword(oobCode, newPassword)
-            .then(res => {
-              console.log("====================================");
-              console.log(`Response => ${res}`);
-              console.log("====================================");
+          // Navigate user to the succes page...
+          history.push(
+            "/auth/reset-success" ||
+              "https://localpharma.netlify.app/auth/rest-success"
+          );
 
-              // Navigate user to the succes page...
-              history.push(
-                "/auth/reset-success" ||
-                  "https://localpharma.netlify.app/auth/rest-success"
-              );
-            })
-            .catch(err => console.log(err.message));
-          alert("Password successfully reset");
+          // const oobCode = queryParams.get("oobCode");
+
+          // resetPassword(oobCode, newPassword)
+          //   .then(res => {
+          //     console.log("====================================");
+          //     console.log(`Response => ${res}`);
+          //     console.log("====================================");
+
+          //     // Navigate user to the succes page...
+          //     history.push(
+          //       "/auth/reset-success" ||
+          //         "https://localpharma.netlify.app/auth/rest-success"
+          //     );
+          //   })
+          //   .catch(err => console.log(err.message));
+          // alert("Password successfully reset");
         } else {
           alert("Passwords do not match");
           return false;

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Components imports
 import Homepage from "./Pages/Homepage/Homepage";
-import Header from "./Components/Core/Header/Header";
+// import Header from "./Components/Core/Header/Header";
 import Forgotpassword from "./Pages/Auth/ForgotPassword";
 import NewPassword from "./Pages/Auth/NewPassword";
 import ResetComplete from "./Pages/Auth/ResetComplete";
@@ -15,7 +15,7 @@ const AppRouter = () => {
   return (
     <div>
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route path='/auth/signup' component={Signup} />
