@@ -44,6 +44,9 @@ const Signup = () => {
         <div className={classes.form__wrapper}>
           {/* Form */}
           <div className={classes.form__container}>
+            <div className={classes.pharmacy__reg}>
+              <Link to='/auth/open-pharmacy'>Open a pharmacy</Link>
+            </div>
             <form onSubmit={handleSignupWithEmailAndPassword}>
               <div className={classes.form__heading}>
                 <h3>Create an account</h3>
@@ -112,7 +115,6 @@ const Signup = () => {
               </p>
             </div>
           </div>
-
           {/* Image */}
           <div className={classes.bg__img}></div>
         </div>

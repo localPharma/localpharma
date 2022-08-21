@@ -14,6 +14,7 @@ const MostPopular = () => {
           .map(({ id, drug_name, drug_brand, drug_company }) => (
             <Card
               key={id}
+              id={id}
               drug={drug_name}
               brand={drug_brand}
               company={drug_company}
@@ -27,10 +28,10 @@ const MostPopular = () => {
 
 export default MostPopular;
 
-const Card = ({ drug, brand, company }) => {
+const Card = ({ id, drug, brand, company }) => {
   return (
     <div className={classes.drug__card}>
-      <Link to=''>
+      <Link to={`/categories/${id}`}>
         <div className={classes.card__details}>
           <h2>{drug}</h2>
           <h3>{brand}</h3>

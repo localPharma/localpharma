@@ -1,0 +1,34 @@
+.user__avatar {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 170px;
+  max-width: 180px;
+}
+
+.user__photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(222, 222, 222, 0.193);
+  border-radius: 5px;
+  padding: 7px 0;
+  gap: 5px;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.initials {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* gap: 15px; */
+}

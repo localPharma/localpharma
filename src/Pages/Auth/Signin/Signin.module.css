@@ -191,3 +191,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.pharmacy__reg {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-bottom: 40px;
+  width: 350px;
+  margin-left: -50px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+
+.pharmacy__reg a {
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}

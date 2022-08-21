@@ -32,7 +32,6 @@
 /* CARD */
 .drug__card {
   width: 250px;
-  /* border: 2px solid red; */
   border-radius: 5px;
   display: flex;
   align-items: center;

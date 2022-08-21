@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../../ContextAPI/AppContext";
@@ -13,27 +14,6 @@ const Header = () => {
   const { currentUser } = useAuth();
 
   const user = currentUser;
-
-  // useEffect(() => {
-  //   const verifypage = "/auth/verify";
-  //   const resetpassword = "/auth/reset-password";
-  //   const newpassword = "/auth/new-password";
-  //   const resetcomplete = "/auth/reset-complete";
-  //   const signin = "/auth/signin";
-  //   const signup = "/auth/signup";
-
-  //   // Checking if current location is either signup, signin, reset password, verify email etc..
-  //   if (
-  //     location.pathname === resetpassword ||
-  //     location.pathname === verifypage ||
-  //     location.pathname === newpassword ||
-  //     location.pathname === resetcomplete ||
-  //     location.pathname === signin ||
-  //     location.pathname === signup
-  //   ) {
-  //     setIsAuthLinkVisible(!isAuthLinkVisible);
-  //   }
-  // }, [location, isAuthLinkVisible]);
 
   return (
     <header className={classes.header}>
@@ -56,6 +36,14 @@ const Header = () => {
             </Link>
           </>
         )}
+
+        {/* <User />
+        <Link to='/auth/signin' className={classes.login}>
+          Sign In
+        </Link>
+        <Link to='/auth/signup' className={classes.signup}>
+          Create an account
+        </Link> */}
       </div>
     </header>
   );

@@ -1,29 +1,20 @@
-.signup__page {
-  width: 100%;
+.vendor__signup {
   height: calc(100vh - 60px);
-}
-
-.form__wrapper {
   width: 100%;
-  height: 100%;
-  display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    /* flex-direction: column; */
-}
-
-.form__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  width: 40%;
-  height: 100%;
-  background-color: white;
-  padding: 0 50px;
+  /* gap: 30px; */
+  padding-top: 50px;
 }
 
-.form__container form {
+.pharma__title h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.vendor__signup form {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -31,6 +22,7 @@
   gap: 20px;
   width: 100%;
   max-width: 400px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -184,33 +176,4 @@
 .account__link p span a {
   color: dodgerblue;
   font-weight: 500;
-}
-/* Image */
-.bg__img {
-  width: 60%;
-  height: 100%;
-  background-image: url('../../../assets/pharm1.jfif');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.pharmacy__reg {
-  /* border: 1px solid black; */
-  width: 100%;
-  margin-bottom: 40px;
-  width: 350px;
-  margin-left: -50px;
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: dodgerblue;
-  border-radius: 5px;
-}
-
-.pharmacy__reg a {
-  padding: 12px 0;
-  width: 100%;
-  font-size: 16px;
-  color: white;
-  text-align: center;
 }

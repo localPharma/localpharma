@@ -42,6 +42,9 @@ const Signin = () => {
         <div className={classes.form__wrapper}>
           {/* Form */}
           <div className={classes.form__container}>
+            <div className={classes.pharmacy__reg}>
+              <Link to='/auth/login-pharmacy'>Login to pharmacy</Link>
+            </div>
             <form
               onSubmit={handleSigninWithEmailAndPassword}
               autoComplete='true'>

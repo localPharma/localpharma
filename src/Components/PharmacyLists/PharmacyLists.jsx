@@ -36,7 +36,7 @@ export default PharmacyLists;
 const PharmacyCard = ({ id, image, title, working_days, location }) => {
   return (
     <div className={classes.pharmacy__card}>
-      <Link href='/pharmacy'>
+      <Link to='/pharmacy'>
         <img
           src={image}
           alt=''

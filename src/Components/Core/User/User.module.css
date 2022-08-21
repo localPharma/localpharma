@@ -1,0 +1,84 @@
+.user__btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.dropdown__wrapper {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px 13px;
+  transition: max-height 0.5s;
+  max-height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 16px rgba(162, 162, 162, 0.223);
+}
+
+.dropdown__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.dropdown__info p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dropdown__wrapper a {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  border-radius: 5px;
+  color: rgb(59, 59, 59);
+  transition: transform 0.25s linear;
+}
+
+.dropdown__wrapper a span {
+  color: rgba(104, 104, 104, 0.771);
+  transition: transform 0.25s;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdown__wrapper a:hover {
+  background-color: rgba(215, 215, 215, 0.209);
+  /* transform: translateX(5px); */
+}
+
+.dropdown__wrapper a:hover span {
+  transform: translateX(3px);
+}
+
+.dropdown__wrapper .signout__btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+}

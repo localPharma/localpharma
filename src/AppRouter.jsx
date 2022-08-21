@@ -10,6 +10,8 @@ import ResetComplete from "./Pages/Auth/ResetComplete";
 import Signin from "./Pages/Auth/Signin/Signin";
 import Signup from "./Pages/Auth/Signup/Signup";
 import VerifyEmail from "./Pages/Auth/VerifyEmail";
+import Vendorsignup from "./Pages/Auth/Vendor/Vendorsignup";
+import Vendorsignin from "./Pages/Auth/Vendor/Vendorsignin";
 
 const AppRouter = () => {
   return (
@@ -24,6 +26,9 @@ const AppRouter = () => {
           <Route path='/auth/verify' component={VerifyEmail} />
           <Route path='/auth/new-password' component={NewPassword} />
           <Route path='/auth/reset-success' component={ResetComplete} />
+          <Route path='/auth/open-pharmacy' component={Vendorsignup} />
+          <Route path='/auth/login-pharmacy' component={Vendorsignin} />
+          {/* <Route path='*' component={<h2>404 page</h2>} /> */}
         </Switch>
       </Router>
     </div>
