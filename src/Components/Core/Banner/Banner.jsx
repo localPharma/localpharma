@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import classes from "./Banner.module.css";
 
-const Banner = () => {
+const Banner = ({text}) => {
   const [location, setLocation] = useState("");
   const [pharmacy, setPharmacy] = useState("");
   // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -30,7 +30,9 @@ const Banner = () => {
     };
 
     const geolocationFailure = error => {
-      console.error(`Error : ${error.code} => ${error.message}`);
+      // console.error(`Error : ${error.code} => ${error.message}`);
+      // alert('failed...')
+      return;
     };
 
     // Function to track user's location
@@ -48,7 +50,7 @@ const Banner = () => {
   return (
     <div className={classes.banner}>
       <div className={classes.banner__txt}>
-        <h2>Choose Your Pharmacy</h2>
+        <h2>{text}</h2>
       </div>
       {/* FORM */}
       <div className={classes.search__form}>
@@ -58,7 +60,7 @@ const Banner = () => {
             <select
               className={classes.select}
               defaultValue='Choose a location'
-              name='search locations'
+              name='Search locations'
               id='location'
               required
               onChange={e => setLocation(e.target.value)}>

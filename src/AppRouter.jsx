@@ -14,6 +14,9 @@ import Vendorsignup from "./Pages/Auth/Vendor/Vendorsignup";
 import Vendorsignin from "./Pages/Auth/Vendor/Vendorsignin";
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 import PageNotFound from "./Pages/404/PageNotFound";
+import Pharmaciespage from "./Pages/Pharmaciespage/Pharmaciespage";
+import Pharmacypage from "./Pages/Pharmacypage/Pharmacypage";
+import Categoriespage from "./Pages/Categories/Categoriespage";
 
 const AppRouter = () => {
   return (
@@ -21,25 +24,25 @@ const AppRouter = () => {
       <Router>
         {/* <Header /> */}
         <Switch>
-          <Route exact path='/' component={Homepage} />
-          <ProtectedRoute path='/auth/signup' component={Signup} />
-          <ProtectedRoute path='/auth/signin' component={Signin} />
+          <Route exact path="/" component={Homepage} />
+          <Route path="/pharmacies" component={Pharmaciespage} />
+          <Route path="/categories" component={Categoriespage} />
+          <Route path="/pharmacypage/:id" component={Pharmacypage} />
+          <ProtectedRoute path="/auth/signup" component={Signup} />
+          <ProtectedRoute path="/auth/signin" component={Signin} />
           <ProtectedRoute
-            path='/auth/reset-password'
+            path="/auth/reset-password"
             component={Forgotpassword}
           />
-          <ProtectedRoute path='/auth/verify' component={VerifyEmail} />
-          <ProtectedRoute path='/auth/new-password' component={NewPassword} />
+          <ProtectedRoute path="/auth/verify" component={VerifyEmail} />
+          <ProtectedRoute path="/auth/new-password" component={NewPassword} />
           <ProtectedRoute
-            path='/auth/reset-success'
+            path="/auth/reset-success"
             component={ResetComplete}
           />
-          <ProtectedRoute path='/auth/open-pharmacy' component={Vendorsignup} />
-          <ProtectedRoute
-            path='/auth/login-pharmacy'
-            component={Vendorsignin}
-          />
-          <Route path='*' component={PageNotFound} />
+          <Route path="/auth/open-pharmacy" component={Vendorsignup} />
+          <Route path="/auth/login-pharmacy" component={Vendorsignin} />
+          <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>
     </div>

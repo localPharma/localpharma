@@ -22,7 +22,12 @@ const Signup = () => {
         history.replace("/");
       })
       .catch(err => {
-        alert(err.message);
+        // alert(err.message);
+        if(err.message === "Firebase: Error (auth/internal-error)") {
+          alert('Sorry, please connect to the internet.')
+        } else if (err.message === "Firebase: Error (auth/network-request-failed)") {
+          alert('Sorry, please connect to the internet.')
+        }
       });
   };
 

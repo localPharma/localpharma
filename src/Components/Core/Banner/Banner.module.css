@@ -6,7 +6,12 @@
   gap: 90px;
   height: calc(100vh - 60px);
   padding-top: 100px;
-  background-color: rgba(177, 216, 255, 0.366);
+  /* background-color: rgba(177, 216, 255, 0.366); */
+  background-image: url('/src/assets/Food_202.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
 }
 
 .banner__txt {
@@ -31,7 +36,7 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 30px;
-  width: 750px;
+  width: 800px;
   padding: 15px 30px;
   background-color: white;
   border-radius: 5px;
@@ -46,6 +51,7 @@
   justify-content: center;
   gap: 30px;
   background-color: transparent;
+  /* padding: 0 30px; */
 }
 
 .search__form form label {

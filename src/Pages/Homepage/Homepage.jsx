@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner text="Choose Your Pharmacy"/>
       <MostPopular />
     </div>
   );
