@@ -1,33 +1,25 @@
 import React, { useState } from "react";
 // import { FaUser } from "react-icons/fa";
 import classes from "./User.module.css";
-// import { useAuth } from "../../../ContextAPI/AppContext";
-import { Link } from "react-router-dom";
+import { useAuth } from "../../../ContextAPI/AppContext";
+import { Link, useLocation } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import UserAvatar from "./UserAvatar";
 
 const User = () => {
   const [openUserStatus, setOpenUserStatus] = useState(false);
-  // const { currentUser } = useAuth();
+  const { currentUser } = useAuth();
 
-  // const user = currentUser;
+  const user = currentUser;
+  const location = useLocation();
 
-  // const { displayName, photoUrl } = user;
+  const { displayName, photoUrl, logout } = user;
 
-  // const getInitials = displayName => {
-  //   displayName
-  //     .split(" ")
-  //     .map(x => x.charAt(0))
-  //     .join("")
-  //     .substr(0, 2)
-  //     .toUpperCase();
-  // };
-
-  // const handleSignout = () => {
-  //   logout()
-  //     .then(res => console.log(res))
-  //     .catch(err => console.log(err.message));
-  // };
+  const handleSignout = () => {
+    logout()
+      .then(() => location.push("/"))
+      .catch(err => console.log(err.message));
+  };
 
   const handleUserDisplay = () => {
     setOpenUserStatus(!openUserStatus);
@@ -35,11 +27,15 @@ const User = () => {
   return (
     <div className={classes.user}>
       <div className={classes.user__btn} onClick={handleUserDisplay}>
-        <UserAvatar />
+        <UserAvatar
+          displayName={displayName}
+          photoUrl={photoUrl}
+          loading='lazy'
+        />
       </div>
 
       {/* User dropdown */}
-      {openUserStatus ? (
+      {openUserStatus && (
         <>
           <div className={classes.dropdown}>
             <div className={classes.dropdown__wrapper}>
@@ -66,14 +62,15 @@ const User = () => {
                   <FaChevronRight />
                 </span>
               </Link>
-              <button type='button' className={classes.signout__btn}>
+              <button
+                type='button'
+                className={classes.signout__btn}
+                onClick={handleSignout}>
                 Log out
               </button>
             </div>
           </div>
         </>
-      ) : (
-        ""
       )}
     </div>
   );

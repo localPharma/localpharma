@@ -12,6 +12,8 @@ import Signup from "./Pages/Auth/Signup/Signup";
 import VerifyEmail from "./Pages/Auth/VerifyEmail";
 import Vendorsignup from "./Pages/Auth/Vendor/Vendorsignup";
 import Vendorsignin from "./Pages/Auth/Vendor/Vendorsignin";
+import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
+import PageNotFound from "./Pages/404/PageNotFound";
 
 const AppRouter = () => {
   return (
@@ -20,15 +22,24 @@ const AppRouter = () => {
         {/* <Header /> */}
         <Switch>
           <Route exact path='/' component={Homepage} />
-          <Route path='/auth/signup' component={Signup} />
-          <Route path='/auth/signin' component={Signin} />
-          <Route path='/auth/reset-password' component={Forgotpassword} />
-          <Route path='/auth/verify' component={VerifyEmail} />
-          <Route path='/auth/new-password' component={NewPassword} />
-          <Route path='/auth/reset-success' component={ResetComplete} />
-          <Route path='/auth/open-pharmacy' component={Vendorsignup} />
-          <Route path='/auth/login-pharmacy' component={Vendorsignin} />
-          {/* <Route path='*' component={<h2>404 page</h2>} /> */}
+          <ProtectedRoute path='/auth/signup' component={Signup} />
+          <ProtectedRoute path='/auth/signin' component={Signin} />
+          <ProtectedRoute
+            path='/auth/reset-password'
+            component={Forgotpassword}
+          />
+          <ProtectedRoute path='/auth/verify' component={VerifyEmail} />
+          <ProtectedRoute path='/auth/new-password' component={NewPassword} />
+          <ProtectedRoute
+            path='/auth/reset-success'
+            component={ResetComplete}
+          />
+          <ProtectedRoute path='/auth/open-pharmacy' component={Vendorsignup} />
+          <ProtectedRoute
+            path='/auth/login-pharmacy'
+            component={Vendorsignin}
+          />
+          <Route path='*' component={PageNotFound} />
         </Switch>
       </Router>
     </div>

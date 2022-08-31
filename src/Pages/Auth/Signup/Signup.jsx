@@ -108,7 +108,7 @@ const Signup = () => {
             {/* Dont have an account */}
             <div className={classes.account__link}>
               <p>
-                Already have an account?{" "}
+                Already have an account?
                 <span>
                   <Link to='/auth/signin'>Sign in</Link>
                 </span>
