@@ -29,7 +29,9 @@ const Signin = () => {
   // Google Authenticaton Functionality
   const handleSigninWithGoogle = () => {
     loginWithGoogle()
-      .then(user => console.log(user))
+      .then((_)=> {
+        history.replace("/");
+      })
       .catch(err => {
         alert(err.message);
       });
