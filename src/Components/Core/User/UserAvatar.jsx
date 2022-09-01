@@ -16,16 +16,18 @@ const UserAvatar = ({ displayName, photoUrl }) => {
     <div className={classes.user__avatar}>
       <div className={classes.user__photo}>
         {photoUrl ? (
-          <img src={photoUrl} alt='user avatar' className={classes.avatar} />
+          <img src={photoUrl} alt="user avatar" className={classes.avatar} />
         ) : (
           <div className={classes.initials}>
             {displayName
               ?.split(" ")
-              ?.map(n => n[0])
+              ?.map((n) => n[0])
               ?.join(".")}
           </div>
         )}
-        <p className={classes.display_name}>{displayName}</p>
+        <p className={classes.display_name}>
+          {displayName ? displayName : "Welcome User"}
+        </p>
       </div>
       {/* <div className={classes.user__photo}>
         <>
