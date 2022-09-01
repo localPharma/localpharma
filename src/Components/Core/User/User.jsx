@@ -17,7 +17,7 @@ const User = () => {
 
   const handleSignout = () => {
     logout()
-      .then(() => location.push("/"))
+      .then((_) => location.replace("/"))
       .catch((err) => console.log(err.message));
   };
 

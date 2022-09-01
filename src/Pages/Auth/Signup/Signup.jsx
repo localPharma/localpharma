@@ -96,7 +96,12 @@ const Signup = () => {
                 <Link to='/auth/reset-password'>Forgot password?</Link>
               </div> */}
               </div>
-              <button className={classes.auth__btn}>Create account</button>
+              <button
+                className={classes.auth__btn}
+                onClick={handleSignupWithEmailAndPassword}
+              >
+                Create account
+              </button>
             </form>
 
             {/* Third-party Auth */}
