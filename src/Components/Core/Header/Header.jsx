@@ -28,6 +28,13 @@ const Header = () => {
       {/* Nav */}
       <nav className={classes.nav}>
         <NavLink
+          to="/products"
+          className={classes.nav__link}
+          activeStyle={activeStyle}
+        >
+          Products
+        </NavLink>
+        <NavLink
           to="/pharmacies"
           className={classes.nav__link}
           activeStyle={activeStyle}

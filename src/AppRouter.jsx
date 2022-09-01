@@ -17,6 +17,7 @@ import PageNotFound from "./Pages/404/PageNotFound";
 import Pharmaciespage from "./Pages/Pharmaciespage/Pharmaciespage";
 import Pharmacypage from "./Pages/Pharmacypage/Pharmacypage";
 import Categoriespage from "./Pages/Categories/Categoriespage";
+import Productspage from "./Pages/Productspage/Productspage";
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,8 @@ const AppRouter = () => {
           <Route path="/pharmacies" component={Pharmaciespage} />
           <Route path="/categories" component={Categoriespage} />
           <Route path="/pharmacypage/:id" component={Pharmacypage} />
+          <Route path="/products" component={Productspage} />
+          {/* <Route path="/pharmacypage/:id" component={Productspage} /> */}
           <ProtectedRoute path="/auth/signup" component={Signup} />
           <ProtectedRoute path="/auth/signin" component={Signin} />
           <ProtectedRoute

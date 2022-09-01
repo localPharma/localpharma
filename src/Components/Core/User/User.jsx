@@ -8,17 +8,17 @@ import UserAvatar from "./UserAvatar";
 
 const User = () => {
   const [openUserStatus, setOpenUserStatus] = useState(false);
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
 
   const user = currentUser;
   const location = useLocation();
 
-  const { displayName, photoUrl, logout } = user;
+  const { displayName, photoUrl } = user;
 
   const handleSignout = () => {
     logout()
       .then(() => location.push("/"))
-      .catch(err => console.log(err.message));
+      .catch((err) => console.log(err.message));
   };
 
   const handleUserDisplay = () => {
@@ -30,7 +30,7 @@ const User = () => {
         <UserAvatar
           displayName={displayName}
           photoUrl={photoUrl}
-          loading='lazy'
+          loading="lazy"
         />
       </div>
 
@@ -40,32 +40,33 @@ const User = () => {
           <div className={classes.dropdown}>
             <div className={classes.dropdown__wrapper}>
               <div className={classes.dropdown__info}>
-                <UserAvatar />
+                <UserAvatar displayName={displayName} photoUrl={photoUrl} />
               </div>
 
               {/* Links */}
-              <Link to='/profile'>
+              <Link to="/profile">
                 Edit Profile
                 <span>
                   <FaChevronRight />
                 </span>
               </Link>
-              <Link to='/history'>
+              <Link to="/history">
                 History
                 <span>
                   <FaChevronRight />
                 </span>
               </Link>
-              <Link to='/settings'>
+              <Link to="/settings">
                 Settngs and Privacy
                 <span>
                   <FaChevronRight />
                 </span>
               </Link>
               <button
-                type='button'
+                type="button"
                 className={classes.signout__btn}
-                onClick={handleSignout}>
+                onClick={handleSignout}
+              >
                 Log out
               </button>
             </div>
