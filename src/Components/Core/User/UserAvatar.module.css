@@ -36,12 +36,10 @@
   background-color: rgba(108, 181, 255, 0.697);
   color: white;
   text-transform: capitalize;
-  font-weight: 600;
   font-size: 14px;
-  /* gap: 15px; */
 }
 
 .display_name {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 14px;
 }
