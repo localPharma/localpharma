@@ -26,14 +26,16 @@
 }
 
 .initials {
-  /* width: 100%; */
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 7px;
   border-radius: 50%;
-  background-color: rgba(95, 175, 255, 0.903);
+  background-color: rgba(108, 181, 255, 0.697);
   color: white;
   text-transform: capitalize;
+  font-weight: 600;
   /* gap: 15px; */
 }
