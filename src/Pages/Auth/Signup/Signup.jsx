@@ -13,32 +13,30 @@ const Signup = () => {
   const { register, loginWithGoogle } = useAuth();
 
   // Email and Password Signup Functionality
-  const handleSignupWithEmailAndPassword = e => {
+  const handleSignupWithEmailAndPassword = (e) => {
     e.preventDefault();
 
     register(email, password)
-      .then(userCredentials => {
+      .then((userCredentials) => {
         console.log(userCredentials);
         history.replace("/");
       })
-      .catch(err => {
-        // alert(err.message);
-        if(err.message === "Firebase: Error (auth/internal-error)") {
-          alert('Sorry, please connect to the internet.')
-        } else if (err.message === "Firebase: Error (auth/network-request-failed)") {
-          alert('Sorry, please connect to the internet.')
-        }
+      .catch((err) => {
+        console.log(err.message);
+        return;
       });
   };
 
   // Google Authenticaton Functionality
   const handleSignupWithGoogle = () => {
     loginWithGoogle()
-      .then(() => {
+      .then((userCredentials) => {
+        console.log(userCredentials);
         history.replace("/");
       })
-      .catch(err => {
-        alert(err.message);
+      .catch((err) => {
+        console.log(err.message);
+        return;
       });
   };
 
@@ -50,7 +48,7 @@ const Signup = () => {
           {/* Form */}
           <div className={classes.form__container}>
             <div className={classes.pharmacy__reg}>
-              <Link to='/auth/open-pharmacy'>Open a pharmacy</Link>
+              <Link to="/auth/open-pharmacy">Open a pharmacy</Link>
             </div>
             <form onSubmit={handleSignupWithEmailAndPassword}>
               <div className={classes.form__heading}>
@@ -71,27 +69,27 @@ const Signup = () => {
                 />
               </div> */}
                 <div className={classes.form__group}>
-                  <label htmlFor='email'>Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
-                    type='email'
-                    name='email'
-                    id='email'
+                    type="email"
+                    name="email"
+                    id="email"
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
-                    placeholder='Enter your email'
+                    placeholder="Enter your email"
                   />
                 </div>
                 <div className={classes.form__group}>
-                  <label htmlFor='password'>Password</label>
+                  <label htmlFor="password">Password</label>
                   <input
-                    type='password'
-                    name='password'
-                    id='password'
+                    type="password"
+                    name="password"
+                    id="password"
                     value={password}
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
-                    placeholder='Enter your password'
+                    placeholder="Enter your password"
                   />
                 </div>
                 {/* <div className={classes.forgot__psd}>
@@ -104,9 +102,10 @@ const Signup = () => {
             {/* Third-party Auth */}
             <div className={classes.third__party_auth}>
               <button
-                type='button'
+                type="button"
                 className={classes.google__auth}
-                onClick={handleSignupWithGoogle}>
+                onClick={handleSignupWithGoogle}
+              >
                 Sign in with Google
               </button>
             </div>
@@ -115,7 +114,7 @@ const Signup = () => {
               <p>
                 Already have an account?
                 <span>
-                  <Link to='/auth/signin'>Sign in</Link>
+                  <Link to="/auth/signin">Sign in</Link>
                 </span>
               </p>
             </div>
