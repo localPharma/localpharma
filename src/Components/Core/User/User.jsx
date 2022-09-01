@@ -27,11 +27,7 @@ const User = () => {
   return (
     <div className={classes.user}>
       <div className={classes.user__btn} onClick={handleUserDisplay}>
-        <UserAvatar
-          displayName={displayName}
-          photoUrl={photoUrl}
-          loading="lazy"
-        />
+        <UserAvatar displayName={displayName} photoUrl={photoUrl} />
       </div>
 
       {/* User dropdown */}
@@ -42,7 +38,6 @@ const User = () => {
               <div className={classes.dropdown__info}>
                 <UserAvatar displayName={displayName} photoUrl={photoUrl} />
               </div>
-
               {/* Links */}
               <Link to="/profile">
                 Edit Profile
