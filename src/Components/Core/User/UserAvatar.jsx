@@ -25,7 +25,7 @@ const UserAvatar = ({ displayName, photoUrl }) => {
               ?.join(".")}
           </div>
         )}
-        {displayName}
+        <p className={classes.display_name}>{displayName}</p>
       </div>
       {/* <div className={classes.user__photo}>
         <>

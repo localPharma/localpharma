@@ -40,3 +40,9 @@
   font-size: 14px;
   /* gap: 15px; */
 }
+
+.display_name {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
