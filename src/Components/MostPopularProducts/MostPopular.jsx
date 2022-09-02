@@ -4,25 +4,42 @@ import { Link } from "react-router-dom";
 import CardImg from "../../assets/pharm1.jfif";
 import { pharmacies } from "../../api/pharmacies";
 
-const MostPopular = () => {
+const MostPopular = ({ allowSlice }) => {
   return (
     <div className={classes.most__popular}>
       <div className={classes.title}>
         <h3>Our Pharmacy Vendors</h3>
       </div>
       <div className={classes.popular__products_lists}>
-        {pharmacies
-          .map(({ id, name, location, working_days, imgUrl }) => (
-            <Card
-              key={id}
-              id={id}
-              pharmacy_name={name}
-              location={location}
-              working_days={working_days}
-              imgUrl={imgUrl}
-            />
-          ))
-          .slice(0, 6)}
+        {allowSlice ? (
+          <>
+            {pharmacies
+              .map(({ id, name, location, working_days, imgUrl }) => (
+                <Card
+                  key={id}
+                  id={id}
+                  pharmacy_name={name}
+                  location={location}
+                  working_days={working_days}
+                  imgUrl={imgUrl}
+                />
+              ))
+              .slice(0, 6)}
+          </>
+        ) : (
+          <>
+            {pharmacies.map(({ id, name, location, working_days, imgUrl }) => (
+              <Card
+                key={id}
+                id={id}
+                pharmacy_name={name}
+                location={location}
+                working_days={working_days}
+                imgUrl={imgUrl}
+              />
+            ))}
+          </>
+        )}
       </div>
     </div>
   );

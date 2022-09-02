@@ -1,0 +1,92 @@
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-top: 50px;
+  /* color: whitesmoke; */
+}
+
+.footer__brand {
+  width: 500px;
+  line-height: 1.5;
+}
+
+.footer__brand a {
+  font-size: 30px;
+  font-weight: 550;
+  color: white;
+}
+
+.footer__brand a span{
+  color: dodgerblue;
+}
+
+.footer__brand p {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+  width: 350px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  /* height: 100%; */
+  width: 100%;
+}
+
+.links, .company, .misc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.company ul li {
+  font-size: 16px;
+}
+
+.links > h3, .company > h3, .misc h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(188, 188, 188);
+  font-weight: 550;
+}
+
+.links a, .misc a, .company ul li {
+  color: rgb(158, 158, 158);
+  transition: all 0.25s linear;
+}
+
+.links a:hover, .misc a:hover, .company ul li:hover {
+  color: whitesmoke;
+}
+
+.copyright {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: rgb(12, 12, 12);
+}
+
+.copyright p {
+  font-size: 15px;
+  color: rgb(174, 174, 174);
+}

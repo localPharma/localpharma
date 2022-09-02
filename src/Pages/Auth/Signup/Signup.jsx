@@ -48,7 +48,13 @@ const Signup = () => {
           {/* Form */}
           <div className={classes.form__container}>
             <div className={classes.pharmacy__reg}>
-              <Link to="/auth/open-pharmacy">Open a pharmacy</Link>
+              <a
+                href="https://local-pharma-dashboard.vercel.app"
+                target="_parent"
+                rel="noreferrer"
+              >
+                Create pharmacy
+              </a>
             </div>
             <form onSubmit={handleSignupWithEmailAndPassword}>
               <div className={classes.form__heading}>

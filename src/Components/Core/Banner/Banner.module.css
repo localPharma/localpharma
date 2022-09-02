@@ -12,13 +12,27 @@
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
+  position: relative;
 }
+
+.banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  background: rgba(3, 3, 3, 0.665);
+  z-index: 0;
+}
+
 
 .banner__txt {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .banner__txt h2 {
@@ -40,7 +54,8 @@
   padding: 15px 30px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(193, 193, 193, 0.4), 0 2px 10px rgba(199, 199, 199, 0.3);
+  box-shadow: 0 2px 10px rgba(107, 107, 107, 0.3), 0 2px 10px rgba(107, 107, 107, 0.3);
+  z-index: 1;
 }
 
 .search__form form {

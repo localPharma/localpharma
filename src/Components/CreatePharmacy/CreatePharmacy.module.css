@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 70px;
+}
+
+.create__pharmacy {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.create__pharmacy h2 {
+  max-width: 700px;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.2;
+  color: whitesmoke;
+}
+
+.create__pharmacy p {
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 25px;
+}
+
+.open__pharmacy {
+  padding: 13px 25px;
+  background-color: white;
+  color: dodgerblue;
+  font-size: 17px;
+  border-radius: 5px;
+}

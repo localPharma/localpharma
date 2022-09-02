@@ -13,14 +13,14 @@ const Signin = () => {
   const { login, loginWithGoogle } = useAuth();
 
   // Email and Password Signin Functionality
-  const handleSigninWithEmailAndPassword = e => {
+  const handleSigninWithEmailAndPassword = (e) => {
     e.preventDefault();
 
     login(email, password)
       .then(() => {
         history.replace("/");
       })
-      .catch(err => {
+      .catch((err) => {
         //: TODO catch all firebase error messages in a custom message notification...
         alert(err.message);
       });
@@ -29,10 +29,10 @@ const Signin = () => {
   // Google Authenticaton Functionality
   const handleSigninWithGoogle = () => {
     loginWithGoogle()
-      .then((_)=> {
+      .then((_) => {
         history.replace("/");
       })
-      .catch(err => {
+      .catch((err) => {
         alert(err.message);
       });
   };
@@ -45,11 +45,18 @@ const Signin = () => {
           {/* Form */}
           <div className={classes.form__container}>
             <div className={classes.pharmacy__reg}>
-              <Link to='/auth/login-pharmacy'>Login to pharmacy</Link>
+              <a
+                href="https://local-pharma-dashboard.vercel.app"
+                target="_parent"
+                rel="noreferrer"
+              >
+                Login to pharmacy
+              </a>
             </div>
             <form
               onSubmit={handleSigninWithEmailAndPassword}
-              autoComplete='true'>
+              autoComplete="true"
+            >
               <div className={classes.form__heading}>
                 <h3>Welcome back</h3>
                 <p>Welcome back! Please enter your credentials.</p>
@@ -68,42 +75,48 @@ const Signin = () => {
                 />
               </div> */}
                 <div className={classes.form__group}>
-                  <label htmlFor='email'>Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
-                    type='email'
-                    name='email'
-                    id='email'
+                    type="email"
+                    name="email"
+                    id="email"
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
-                    placeholder='Enter your email'
+                    placeholder="Enter your email"
                   />
                 </div>
                 <div className={classes.form__group}>
-                  <label htmlFor='password'>Password</label>
+                  <label htmlFor="password">Password</label>
                   <input
-                    type='password'
-                    name='password'
-                    id='password'
+                    type="password"
+                    name="password"
+                    id="password"
                     value={password}
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
-                    placeholder='Enter your password'
+                    placeholder="Enter your password"
                   />
                 </div>
                 <div className={classes.forgot__psd}>
-                  <Link to='/auth/reset-password'>Forgot password?</Link>
+                  <Link to="/auth/reset-password">Forgot password?</Link>
                 </div>
               </div>
-              <button className={classes.auth__btn}>Sign in</button>
+              <button
+                className={classes.auth__btn}
+                onClick={handleSigninWithEmailAndPassword}
+              >
+                Sign in
+              </button>
             </form>
 
             {/* Third-party Auth */}
             <div className={classes.third__party_auth}>
               <button
-                type='button'
+                type="button"
                 className={classes.google__auth}
-                onClick={handleSigninWithGoogle}>
+                onClick={handleSigninWithGoogle}
+              >
                 Sign in with Google
               </button>
             </div>
@@ -112,7 +125,7 @@ const Signin = () => {
               <p>
                 Don't have an account?
                 <span>
-                  <Link to='/auth/signup'>Create an account</Link>
+                  <Link to="/auth/signup">Create an account</Link>
                 </span>
               </p>
             </div>
