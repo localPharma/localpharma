@@ -1,14 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+// import { FaBasket } from "react-icons/fa";
 
 // STYLES
 import classes from "./Header.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../../ContextAPI/AppContext";
 import User from "../User/User";
+import { useCart } from "../../../ContextAPI/CartContext";
 
 const Header = () => {
   const { currentUser } = useAuth();
+  const items = useCart();
 
   const user = currentUser;
 
@@ -67,9 +70,14 @@ const Header = () => {
       {/* Auth */}
       <div className={classes.auth} id="auth">
         {user ? (
-          <User />
+          <>
+            <Link to="/cart">{/* <FaBasket /> */}</Link>
+            <User />
+          </>
         ) : (
           <>
+            {/* <Link to="/cart"><FaBasket />Cart ({items.length})</Link> */}
+            <Link to="/">Favourites ({items.length})</Link>
             <Link to="/auth/signin" className={classes.login}>
               Sign In
             </Link>

@@ -1,0 +1,104 @@
+.product__card {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 13px; */
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.product__card:hover {
+  transform: scale(1.01);
+}
+
+.product__img {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 250px;
+  box-shadow: 0 3px 10px rgba(91, 91, 91, 0.149);
+}
+
+.product__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.favBtn {
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background-color: rgba(30, 143, 255, 0.607);
+  cursor: pointer;
+  transition: transform 0.25s linear;
+  opacity: 0;
+}
+
+.product__img:hover ~ .favBtn {
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background-color: rgba(30, 143, 255, 0.607);
+  cursor: pointer;
+  transition: all 0.25s linear;
+  opacity: 1;
+}
+
+.favIcon {
+  font-size: 18px;
+  transition: transform 0.25s linear;
+  color: white;
+}
+
+.favBtn:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.favBtn:hover .favIcon {
+  color: red;
+}
+
+.product__card .product__details {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 0;
+}
+
+.product__details h3 {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.product__details div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.product__details div p {
+  font-size: 14px;
+}
