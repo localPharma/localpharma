@@ -41,7 +41,7 @@ const AppContextProvider = ({ children }) => {
   };
 
   // Send User reset password email
-  const forgotPassword = email => {
+  const forgotPassword = (email) => {
     return sendPasswordResetEmail(auth, email, {
       url: "https://localpharma.netlify.app/auth/signin",
     });
@@ -57,7 +57,7 @@ const AppContextProvider = ({ children }) => {
 
   useEffect(() => {
     // Checking if our Application has a user
-    const unsubscribe = onAuthStateChanged(auth, user => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
     });
 

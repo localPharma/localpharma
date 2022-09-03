@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-// import { FaBasket } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 // STYLES
 import classes from "./Header.module.css";
@@ -76,8 +76,8 @@ const Header = () => {
           </>
         ) : (
           <>
-            {/* <Link to="/cart"><FaBasket />Cart ({items.length})</Link> */}
-            <Link to="/">Favourites ({items.length})</Link>
+            <Link to="/cart"><FaShoppingCart />({items.length})</Link>
+            {/* <Link to="/favourites">Favourites ({items.length})</Link> */}
             <Link to="/auth/signin" className={classes.login}>
               Sign In
             </Link>
@@ -88,6 +88,9 @@ const Header = () => {
         )}
       </div>
     </header>
+    // FaShoppingBag
+// FaShoppingBasket
+// FaShoppingCart
   );
 };
 

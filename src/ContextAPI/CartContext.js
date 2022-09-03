@@ -8,8 +8,8 @@ const reducer = (state, action) => {
   switch (action.type) {
     case 'ADD TO CART':
       return [...state, action.item]
-    case "ADD TO FAV":
-      return [...state, action.item]
+    // case "ADD TO FAV":
+    //   return [...FavouriteItems, action.item]
     default:
       throw new Error("Failed...");
   }
