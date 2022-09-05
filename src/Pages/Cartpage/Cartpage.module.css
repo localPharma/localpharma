@@ -5,9 +5,9 @@
   justify-content: flex-start;
   flex-direction: column;
   background-color: rgba(238, 238, 238, 0.419);
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
   /* height: 100vh; */
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding: 50px;
   max-width: 1440px;
   margin: 0 auto;

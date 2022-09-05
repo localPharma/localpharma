@@ -8,7 +8,7 @@ const CartItem = (product, index, handleRemove) => {
     <div className={classes.cart__item}>
       <h3>{drug_name}</h3>
       <p>{drug_brand}</p>
-      <button type="button" onClick={() => handleRemove(index)}></button>
+      <button type="button" onClick={() => handleRemove(index)}>Remove</button>
     </div>
   );
 };

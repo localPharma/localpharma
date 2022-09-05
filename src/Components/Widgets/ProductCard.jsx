@@ -7,31 +7,21 @@ import { FavouriteItems } from "../../api/db";
 // import { useDispatchCart } from "../../ContextAPI/CartContext";
 
 const ProductCard = (product) => {
-  // const { id, drug_name, drug_brand, price, imgUrl } = product
-  // const prodId = id
-  // const prodName = drug_name
-  // const prodBrand = drug_brand
-  // const prodPrice = price
-  // const prodImg = imgUrl
+  // console.log(product);
 
-  console.log(product);
-  
-  // const dispatch = useDispatchCart()
+  // const dispatch = useDispatchCart();
 
   // Function to add product to favourite cart
   const addToFav = (product) => {
     localStorage.setItem("Favourites", JSON.stringify(FavouriteItems));
 
     // Checking if the added product exists in the FavouriteItems db...
-    // let savedProduct = 
+    // let savedProduct =
     FavouriteItems.push(product);
   };
 
   // Handle Add to Cart Functionality...
-  // const handleAddToCart = (prodcct) => {
-  //   dispatch({ type: "ADD TO CART", prodcct})
-  //   console.log(product);
-  // }
+  // 
   return (
     <div className={classes.product__card}>
       <div className={classes.product__img}>
@@ -44,19 +34,24 @@ const ProductCard = (product) => {
       <button
         type="button"
         className={classes.favBtn}
-        onClick={() => addToFav(product.prodId)}
+        onClick={() => addToFav(product.product.id)}
       >
         <FaHeart className={classes.favIcon} />
       </button>
-      <Link to={`/product/${product.prodId}`} className={classes.product__details}>
-        <h3>{product.prodName}</h3>
+      <Link
+        to={`/product/${product.product.id}`}
+        className={classes.product__details}
+      >
+        <h3>{product.product.drug_name}</h3>
         <div>
-          <p className={classes.prod__brand}>{product.prodBrand}</p>
-          <p className={classes.prod__price}>
+          <p className={classes.prod__brand}>{product.product.drug_brand}</p>
+          {/* <p className={classes.prod__price}>
             <b>{product.prodPrice}</b>
-          </p>
+          </p> */}
         </div>
-        {/* <button type="button" onClick={() => handleAddToCart(product)}>Add to Basket</button> */}
+        {/* <button type="button" onClick={() => handleAddToCart(product)}>
+          Add to Basket
+        </button> */}
       </Link>
     </div>
   );

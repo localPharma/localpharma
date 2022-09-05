@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import classes from "./Productspage.module.css";
 import Header from "../../Components/Core/Header/Header";
 import Footer from "../../Components/Core/Footer/Footer";
-import { drugs } from "../../api/products";
+// import { drugs } from "../../api/products";
 import ProductCard from "../../Components/Widgets/ProductCard";
 import { FaSearch } from "react-icons/fa";
 
 const Productspage = () => {
   const [searchDrug, setSearchDrug] = useState("");
-  const [filteredDrugs, setFilteredDrugs] = useState(drugs);
+  const [filteredDrugs, setFilteredDrugs] = useState([]);
   // const [activeTab, setActiveTab] = useState(false);
 
   useEffect(() => {
@@ -22,6 +22,19 @@ const Productspage = () => {
   //     alert(type);
   //   }
   // };
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await fetch('http://localhost:4000/products')
+      const resData = await products.json()
+
+      setFilteredDrugs(resData)
+      // console.table(resData);
+    }
+
+    fetchProducts()
+
+  }, [])
 
   return (
     <>
@@ -87,16 +100,15 @@ const Productspage = () => {
         </div>
         {/* Search Products */}
         <div className={classes.products}>
-          {filteredDrugs.map((product) => (
+          {filteredDrugs.map((product, index) => (
             // ...drug product card
             <ProductCard
-              key={product.id}
+              key={index}
+              id={index}
               product={product}
               // prodId={id}
               // prodName={drug_name}
               // prodBrand={drug_brand}
-              // prodImg={imgUrl}
-              // prodPrice={price}
             />
           ))}
         </div>

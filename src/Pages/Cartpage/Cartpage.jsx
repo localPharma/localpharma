@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowLeft, FaShoppingCart } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
+import Footer from "../../Components/Core/Footer/Footer";
 import Header from "../../Components/Core/Header/Header";
 import CartItem from "../../Components/Widgets/CartItem";
 import { useCart } from "../../ContextAPI/CartContext";
@@ -72,6 +73,7 @@ const Cartpage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

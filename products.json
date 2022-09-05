@@ -1,0 +1,604 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "drug_name": "Dicloxacillin Sodium",
+      "drug_brand": "Dicloxacillin Sodium",
+      "drug_company": "PD-Rx Pharmaceuticals, Inc."
+    },
+    {
+      "id": 2,
+      "drug_name": "Donepezil Hydrochloride",
+      "drug_brand": "Donepezil Hydrochloride",
+      "drug_company": "NorthStar RxLLC"
+    },
+    {
+      "id": 3,
+      "drug_name": "Mygale Agaricus",
+      "drug_brand": "Mygale Agaricus",
+      "drug_company": "Uriel Pharmacy Inc."
+    },
+    {
+      "id": 4,
+      "drug_name": "GUAIFENESIN",
+      "drug_brand": "Childrens Chest Congestion Relief",
+      "drug_company": "Chain Drug Consortium, LLC"
+    },
+    {
+      "id": 5,
+      "drug_name": "Valsartan and Hydrochlorothiazide",
+      "drug_brand": "Valsartan and Hydrochlorothiazide",
+      "drug_company": "Aurobindo Pharma Limited"
+    },
+    {
+      "id": 6,
+      "drug_name": "Pigweed, Rough Redroot Amaranthus retroflexus",
+      "drug_brand": "Pollens - Weeds and Garden Plants, Pigweed, Rough Redroot Amaranthus retroflexus",
+      "drug_company": "Jubilant HollisterStier LLC"
+    },
+    {
+      "id": 7,
+      "drug_name": "voriconazole",
+      "drug_brand": "Voriconazole",
+      "drug_company": "Mylan Pharmaceuticals Inc."
+    },
+    {
+      "id": 8,
+      "drug_name": "Arsenicum Album, Belladonna, Calcarea Fluorica, Calcarea Sulphurica, Echinacea, Hepar Sulphuris Calcareum, Lachesis Mutus, Nux Moschata, Silicea, Sulphur Iodatum, Thymus Gland",
+      "drug_brand": "Progena",
+      "drug_company": "Meditrend, Inc. DBA Progena Professional Formulations"
+    },
+    {
+      "id": 9,
+      "drug_name": "Salicylic acid",
+      "drug_brand": "Clearskin",
+      "drug_company": "Avon Products, Inc."
+    },
+    {
+      "id": 10,
+      "drug_name": "Fluoxetine Hydrochloride",
+      "drug_brand": "Fluoxetine",
+      "drug_company": "Rebel Distributors Corp"
+    },
+    {
+      "id": 11,
+      "drug_name": "Allantoin",
+      "drug_brand": "PLAGENTRA MOTHERS BELLY",
+      "drug_company": "C.A Pharm Co., Ltd."
+    },
+    {
+      "id": 12,
+      "drug_name": "Ondansetron Hydrochloride",
+      "drug_brand": "Ondansetron",
+      "drug_company": "Physicians Total Care, Inc."
+    },
+    {
+      "id": 13,
+      "drug_name": "Lamotrigine",
+      "drug_brand": "Lamotrigine",
+      "drug_company": "Glenmark Generics Inc., USA"
+    },
+    {
+      "id": 14,
+      "drug_name": "ARNICA MONTANA and TOXICODENDRON PUBESCENS LEAF and SOLANUM DULCAMARA STEM and SYMPHYTUM TUBEROSUM ROOT and SULFUR and SANGUINARIA CANADENSIS ROOT and SUS SCROFA CARTILAGE and SUS SCROFA EMBRYO and SU",
+      "drug_brand": "Zeel",
+      "drug_company": "Hameln Pharma GmbH"
+    },
+    {
+      "id": 15,
+      "drug_name": "SEPIA OFFICINALIS JUICE and ALETRIS FARINOSA ROOT and ANAMIRTA COCCULUS SEED and CHAMAELIRIUM LUTEUM ROOT and POTASSIUM CARBONATE and SODIUM CHLORIDE and QUININE ARSENATE and PICRIC ACID and",
+      "drug_brand": "Aletris - Heel",
+      "drug_company": "Heel Inc"
+    },
+    {
+      "id": 16,
+      "drug_name": "Acetaminophen",
+      "drug_brand": "Childrens Acetaminophen",
+      "drug_company": "Precision Dose Inc."
+    },
+    {
+      "id": 17,
+      "drug_name": "Tobacco Leaf",
+      "drug_brand": "Tobacco Leaf",
+      "drug_company": "Nelco Laboratories, Inc."
+    },
+    {
+      "id": 18,
+      "drug_name": "Primidone",
+      "drug_brand": "Primidone",
+      "drug_company": "Lannett Company, Inc."
+    },
+    {
+      "id": 19,
+      "drug_name": "Bismuth subsalicylate",
+      "drug_brand": "Peptic Relief",
+      "drug_company": "Physicians Total Care, Inc."
+    },
+    {
+      "id": 20,
+      "drug_name": "OCTOCRYLENE, OCTISALATE, AVOBENZONE, OCTINOXATE",
+      "drug_brand": "stila CC color correcting broad-spectrum SPF 20 07 DARK",
+      "drug_company": "Stila Styles, LLC"
+    },
+    {
+      "id": 21,
+      "drug_name": "CLONAZEPAM",
+      "drug_brand": "CLONAZEPAM",
+      "drug_company": "STAT Rx USA LLC"
+    },
+    {
+      "id": 22,
+      "drug_name": "pravastatin sodium",
+      "drug_brand": "Pravastatin Sodium",
+      "drug_company": "Golden State Medical Supply"
+    },
+    {
+      "id": 23,
+      "drug_name": "interferon beta-1a",
+      "drug_brand": "AVONEX",
+      "drug_company": "Biogen Idec MA Inc."
+    },
+    {
+      "id": 24,
+      "drug_name": "Ferrum metallicum, Gratiola officinalis, Hamamelis virginiana, Helianthus annuus, Hottonia palustris, flos, Lachesis mutus, Lilium tigrinum, Lycopodium clavatum, Moschus, Palladium metallicum, Platinum metallicum, Rhus toxicodendron, Staphysagria, Sulphur, Veratrum album, Viola odorata",
+      "drug_brand": "Prejudiced",
+      "drug_company": "King Bio Inc."
+    },
+    {
+      "id": 25,
+      "drug_name": "Ragweed Tall Giant",
+      "drug_brand": "AMBROSIA TRIFIDA POLLEN",
+      "drug_company": "ALK-Abello, Inc."
+    },
+    {
+      "id": 26,
+      "drug_name": "Festuca elatior pollen",
+      "drug_brand": "STANDARDIZED MEADOW FESCUE GRASS POLLEN",
+      "drug_company": "Allergy Laboratories, Inc."
+    },
+    {
+      "id": 27,
+      "drug_name": "Cetirizine Hydrochloride",
+      "drug_brand": "Cetirizine Hydrochloride",
+      "drug_company": "Teva Pharmaceuticals USA Inc"
+    },
+    {
+      "id": 28,
+      "drug_name": "Potassium Chloride and Sodium Chloride",
+      "drug_brand": "Potassium Chloride in Sodium Chloride",
+      "drug_company": "Baxter Healthcare Corporation"
+    },
+    {
+      "id": 29,
+      "drug_name": "TRICLOSAN",
+      "drug_brand": "NeoStrata Antibacterial Facial Cleanser",
+      "drug_company": "NeoStrata Company Inc"
+    },
+    {
+      "id": 30,
+      "drug_name": "Zinc Oxide",
+      "drug_brand": "Alba TerraTint Blaze SPF 15 Lip Balm",
+      "drug_company": "Autumn Harp, Inc."
+    },
+    {
+      "id": 31,
+      "drug_name": "methylergonovine maleate",
+      "drug_brand": "Methergine",
+      "drug_company": "Dispensing Solutions, Inc."
+    },
+    {
+      "id": 32,
+      "drug_name": "Cetirizine Hydrochloride",
+      "drug_brand": "Cetirizine Hydrochloride",
+      "drug_company": "Silarx Pharmaceuitcals, Inc"
+    },
+    {
+      "id": 33,
+      "drug_name": "Azithromycin",
+      "drug_brand": "Azithromycin",
+      "drug_company": "McKesson Packaging Services a Business Unit of McKesson Corporation"
+    },
+    {
+      "id": 34,
+      "drug_name": "GABAPENTIN",
+      "drug_brand": "GABAPENTIN",
+      "drug_company": "Direct Rx"
+    },
+    {
+      "id": 35,
+      "drug_name": "Naproxen sodium",
+      "drug_brand": "Naproxen Sodium",
+      "drug_company": "Kroger Company"
+    },
+    {
+      "id": 36,
+      "drug_name": "dextromethorphan polistirex",
+      "drug_brand": "Cough DM",
+      "drug_company": "CVS Pharmacy"
+    },
+    {
+      "id": 37,
+      "drug_name": "Midazolam Hydrochloride",
+      "drug_brand": "Midazolam Hydrochloride",
+      "drug_company": "Roxane Laboratories, Inc"
+    },
+    {
+      "id": 38,
+      "drug_name": "Bacitracin Zinc, Neomycin Sulfate, Polymyxin B Sulfate, and Pramoxine Hydrochloride",
+      "drug_brand": "Neosporin Plus Pain Relief Maximum Strength",
+      "drug_company": "Johnson & Johnson Consumer Products Company, Division of Johnson & Johnson Consumer Companies, Inc."
+    },
+    {
+      "id": 39,
+      "drug_name": "GLYCERIN",
+      "drug_brand": "COLDS RUNNY NOSE",
+      "drug_company": "Natural Health Supply"
+    },
+    {
+      "id": 40,
+      "drug_name": "chlordiazepoxide and amitriptyline hydrochloride",
+      "drug_brand": "Chlordiazepoxide and Amitriptyline Hydrochloride",
+      "drug_company": "Mylan Pharmaceuticals Inc."
+    },
+    {
+      "id": 41,
+      "drug_name": "tretinoin",
+      "drug_brand": "Tretin-X",
+      "drug_company": "Triax Pharmaceuticals, LLC"
+    },
+    {
+      "id": 42,
+      "drug_name": "carvedilol phosphate",
+      "drug_brand": "COREG",
+      "drug_company": "Carilion Materials Management"
+    },
+    {
+      "id": 43,
+      "drug_name": "Titanium Dioxide and Zinc Oxide",
+      "drug_brand": "MDSolarSciences SPF50 Plus Ultra Mineral Screen",
+      "drug_company": "Ecometics, Inc"
+    },
+    {
+      "id": 44,
+      "drug_name": "Sodium Chloride",
+      "drug_brand": "Sodium Chloride",
+      "drug_company": "Baxter Healthcare Corporation"
+    },
+    {
+      "id": 45,
+      "drug_name": "Titanium Dioxide",
+      "drug_brand": "bareMinerals bareSkin Pure Brightening Serum Foundation Broad Spectrum SPF 20",
+      "drug_company": "Bare Escentuals Beauty, Inc."
+    },
+    {
+      "id": 46,
+      "drug_name": "diclofenac sodium",
+      "drug_brand": "DICLOFENAC SODIUM",
+      "drug_company": "Lake Erie Medical DBA Quality Care Products LLC"
+    },
+    {
+      "id": 47,
+      "drug_name": "Sodium Chloride",
+      "drug_brand": "Sodium Chloride",
+      "drug_company": "Fresenius Medical Care North America"
+    },
+    {
+      "id": 48,
+      "drug_name": "Solbar Thirty SPF30",
+      "drug_brand": "Solbar Thirty SPF 30",
+      "drug_company": "Person and Covey"
+    },
+    {
+      "id": 49,
+      "drug_name": "NOT APPLICABLE",
+      "drug_brand": "Fungal Plus",
+      "drug_company": "Dr Elena Morreale"
+    },
+    {
+      "id": 50,
+      "drug_name": "Amlodipine Besylate",
+      "drug_brand": "Amlodipine Besylate",
+      "drug_company": "Legacy Pharmaceutical Packaging"
+    },
+    {
+      "id": 51,
+      "drug_name": "Red Pepper",
+      "drug_brand": "Red Pepper",
+      "drug_company": "Antigen Laboratories, Inc."
+    },
+    {
+      "id": 52,
+      "drug_name": "Betula spiraea",
+      "drug_brand": "Betula Spiraea",
+      "drug_company": "Uriel Pharmacy Inc."
+    },
+    {
+      "id": 53,
+      "drug_name": "Mineral oil, Petrolatum, Phenylephrine HCl, Shark liver oil",
+      "drug_brand": "Healthy Accents Hemorrhoidal",
+      "drug_company": "DZA Brands LLC"
+    },
+    {
+      "id": 54,
+      "drug_name": "Zinc Oxide",
+      "drug_brand": "Budpak Diaper Rash",
+      "drug_company": "Budpak Inc."
+    },
+    {
+      "id": 55,
+      "drug_name": "zolpidem tartrate",
+      "drug_brand": "ZOLPIDEM TARTRATE",
+      "drug_company": "Wockhardt USA LLC."
+    },
+    {
+      "id": 56,
+      "drug_name": "Triamcinolone Acetonide",
+      "drug_brand": "Triderm",
+      "drug_company": "Crown Laboratories"
+    },
+    {
+      "id": 57,
+      "drug_name": "avobenzone, homosalate, octisalate, ocrylene and oxybenzone",
+      "drug_brand": "Sei Bella",
+      "drug_company": "Melaleuca, Inc."
+    },
+    {
+      "id": 58,
+      "drug_name": "Rat Epithelium",
+      "drug_brand": "Rat Epithelium",
+      "drug_company": "Nelco Laboratories, Inc."
+    },
+    {
+      "id": 59,
+      "drug_name": "Benzalkonium Chloride",
+      "drug_brand": "Drummond Aero Instant",
+      "drug_company": "Deb USA, Inc."
+    },
+    {
+      "id": 60,
+      "drug_name": "DIMETHICONE",
+      "drug_brand": "EROS BODY GLIDE",
+      "drug_company": "MEGASOL COSMETIC GMBH"
+    },
+    {
+      "id": 61,
+      "drug_name": "Acetaminophen",
+      "drug_brand": "Extra Strength Non-Aspirin",
+      "drug_company": "CHAIN DRUG MARKETING ASSOCIATION INC"
+    },
+    {
+      "id": 62,
+      "drug_name": "Triclosan",
+      "drug_brand": "Lemon Zest Antibacterial Foaming Hand Wash",
+      "drug_company": "SJ Creations, Inc."
+    },
+    {
+      "id": 63,
+      "drug_name": "Artichoke",
+      "drug_brand": "Artichoke",
+      "drug_company": "Nelco Laboratories, Inc."
+    },
+    {
+      "id": 64,
+      "drug_name": "Amoxicillin and Clavulanate Potassium",
+      "drug_brand": "Amoxicillin and Clavulanate Potassium",
+      "drug_company": "Sandoz Inc"
+    },
+    {
+      "id": 65,
+      "drug_name": "OLANZAPINE",
+      "drug_brand": "OLANZAPINE",
+      "drug_company": "Torrent Pharmaceuticals Limited"
+    },
+    {
+      "id": 66,
+      "drug_name": "Ranitidine Hydrochloride",
+      "drug_brand": "Ranitidine Hydrochloride",
+      "drug_company": "REMEDYREPACK INC."
+    },
+    {
+      "id": 67,
+      "drug_name": "SUNSCREEN, TITANIUM DIOXIDE, ZINC OXIDE",
+      "drug_brand": "OI LIN DEEP MOISTURE SUNSCREEN SPF 25",
+      "drug_company": "Sunrider Manufacturing L.P."
+    },
+    {
+      "id": 68,
+      "drug_name": "Acetaminophen, Caffeine and Pyrilamine maleate",
+      "drug_brand": "Maximum Strength Menstrual Relief",
+      "drug_company": "DOLGENCORP, LLC"
+    },
+    {
+      "id": 69,
+      "drug_name": "Nystatin",
+      "drug_brand": "Nystatin",
+      "drug_company": "Taro Pharmaceuticals U.S.A., Inc."
+    },
+    {
+      "id": 70,
+      "drug_name": "Levetiracetam",
+      "drug_brand": "Levetiracetam",
+      "drug_company": "Dr. Reddy's Laboratories Limited"
+    },
+    {
+      "id": 71,
+      "drug_name": "AVOBENZONE, OCTINOXATE",
+      "drug_brand": "Fresh Sugar Tulip Tinted Lip Treatment Sunscreen SPF 15",
+      "drug_company": "Fresh, Inc."
+    },
+    {
+      "id": 72,
+      "drug_name": "Raspberry",
+      "drug_brand": "Raspberry",
+      "drug_company": "Antigen Laboratories, Inc."
+    },
+    {
+      "id": 73,
+      "drug_name": "TITANIUM DIOXIDE",
+      "drug_brand": "CLARINS UV PLUS HP Broad Spectrum SPF 40 Sunscreen Multi-Protection Tint MEDIUM",
+      "drug_company": "Laboratoires Clarins S.A."
+    },
+    {
+      "id": 74,
+      "drug_name": "acetaminophen,dextromethorphan HBr, doxylamine succinate",
+      "drug_brand": "smart sense nighttime cold and flu relief",
+      "drug_company": "Kmart Corporation"
+    },
+    {
+      "id": 75,
+      "drug_name": "Allergenic Extracts Alum Precipitated",
+      "drug_brand": "CENTER-AL - CARYA OVATA POLLEN",
+      "drug_company": "ALK-Abello, Inc."
+    },
+    {
+      "id": 76,
+      "drug_name": "Hypericum perforatum, Phytolacca decandra, Guaiacum, Ledum palustre, Conium maculatum,",
+      "drug_brand": "Back and Neck Rescue",
+      "drug_company": "Apotheca Company"
+    },
+    {
+      "id": 77,
+      "drug_name": "Aluminum Chlorohydrate",
+      "drug_brand": "Timeless",
+      "drug_company": "Avon Products, Inc"
+    },
+    {
+      "id": 78,
+      "drug_name": "Terbinafine Hydrochloride",
+      "drug_brand": "Terbinafine Hydrochloride",
+      "drug_company": "PD-Rx Pharmaceuticals, Inc."
+    },
+    {
+      "id": 79,
+      "drug_name": "Brompheniramine Maleate, Codeine Phosphate, and Phenylephrine Hydrochloride",
+      "drug_brand": "Pluratuss",
+      "drug_company": "Creekwood Pharmaceutical, Inc."
+    },
+    {
+      "id": 80,
+      "drug_name": "Allergenic Extracts Alum Precipitated",
+      "drug_brand": "CENTER-AL - POA PRATENSIS POLLEN",
+      "drug_company": "ALK-Abello, Inc."
+    },
+    {
+      "id": 81,
+      "drug_name": "Titanium Dioxide",
+      "drug_brand": "Flawless Finish Dual Perfection Makeup SPF 8 Camellia",
+      "drug_company": "Elizabeth Arden, Inc"
+    },
+    {
+      "id": 82,
+      "drug_name": "Citalopram",
+      "drug_brand": "Citalopram",
+      "drug_company": "Golden State Medical Supply, Inc."
+    },
+    {
+      "id": 83,
+      "drug_name": "spinosad",
+      "drug_brand": "Spinosad",
+      "drug_company": "Macoven Pharmaceuticals"
+    },
+    {
+      "id": 84,
+      "drug_name": "Dimethicone",
+      "drug_brand": "Cell to Cell Essence 70mL",
+      "drug_company": "Coway Co., Ltd."
+    },
+    {
+      "id": 85,
+      "drug_name": "EUCALYPTOL, MENTHOL, METHYL SALICYLATE, THYMOL",
+      "drug_brand": "SMART SENSE",
+      "drug_company": "KMART CORPORATION"
+    },
+    {
+      "id": 86,
+      "drug_name": "Acetaminophen",
+      "drug_brand": "Up and Up childrens acetaminophen",
+      "drug_company": "Target Corporation"
+    },
+    {
+      "id": 87,
+      "drug_name": "Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",
+      "drug_brand": "RoC Multi correxion Lift Anti Gravity Day Moisturizer",
+      "drug_company": "Johnson & Johnson Sante Beaute- France"
+    },
+    {
+      "id": 88,
+      "drug_name": "Acetaminophen, Phenylephrine HCl and Dextromethorphan HBr",
+      "drug_brand": "Cold Relief Daytime Multi-Symptom",
+      "drug_company": "WOONSOCKET PRESCRIPTION CENTER,INCORPORATED"
+    },
+    {
+      "id": 89,
+      "drug_name": "alpha-1 proteinase inhibitor human",
+      "drug_brand": "Aralast",
+      "drug_company": "Baxter Healthcare Corporation"
+    },
+    {
+      "id": 90,
+      "drug_name": "Ammonium carbonicum, Antimonium arsenicicum, Antimonium tartaricum, Arsenicum album, Bromium, Carbo vegetabilis, Chlorinum, Kali carbonicum, Lobelia inflata, Stannum metallicum, Sulphuricum acidum",
+      "drug_brand": "Lungs and Bronchial Relief",
+      "drug_company": "New Sun Inc."
+    },
+    {
+      "id": 91,
+      "drug_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+      "drug_brand": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+      "drug_company": "STAT RX USA LLC"
+    },
+    {
+      "id": 92,
+      "drug_name": "OCTINOXATE",
+      "drug_brand": "flormar Foundation Sunscreen Broad Spectrum SPF 20 LF22 PURE BEIGE",
+      "drug_company": "Kosan Kozmetik Sanayi ve Ticaret A.S."
+    },
+    {
+      "id": 93,
+      "drug_name": "Pyrithione Zinc",
+      "drug_brand": "ESIKA",
+      "drug_company": "Ventura Corporation (San Juan, P.R)"
+    },
+    {
+      "id": 94,
+      "drug_name": "Octocrylene and Oxybenzone and Avobenzone",
+      "drug_brand": "Banana Boat Sport SPF 60",
+      "drug_company": "Accra-Pac, Inc."
+    },
+    {
+      "id": 95,
+      "drug_name": "TRICLOSAN",
+      "drug_brand": "DG BODY",
+      "drug_company": "DOLGENCORP INC."
+    },
+    {
+      "id": 96,
+      "drug_name": "Diphenhydramine HCl",
+      "drug_brand": "Nighttime Sleep Aid",
+      "drug_company": "EQUALINE (SuperValu)"
+    },
+    {
+      "id": 97,
+      "drug_name": "Levetiracetam",
+      "drug_brand": "Levetiracetam",
+      "drug_company": "Taro Pharmaceuticals U.S.A., Inc."
+    },
+    {
+      "id": 98,
+      "drug_name": "Number Four Mold Mixture",
+      "drug_brand": "Number Four Mold Mixture",
+      "drug_company": "Antigen Laboratories, Inc."
+    },
+    {
+      "id": 99,
+      "drug_name": "Chlorhexidine Gluconate and Isopropyl Alcohol",
+      "drug_brand": "Prevantics Swab",
+      "drug_company": "Professional Disposables International, Inc."
+    },
+    {
+      "id": 100,
+      "drug_name": "Uricum acidum, Benzoicum acidum, Berber. vulg., Bryonia,Cantharis, Carduus benedictus,Ceanothus, Chelidonium majus, Chionanthus virginica,Cinchona, Dioscorea, Dolichos, Iris versicolor, Juniperus com, Nux vom., Ptelea, Taraxacum, Carduus mar., Cynara scolymus, Solidago, Taraxacum",
+      "drug_brand": "Cleanse Remedy Water",
+      "drug_company": "Georgetown Health, LLC DBA EssentiaLife"
+    }
+  ]
+}
