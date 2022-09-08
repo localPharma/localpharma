@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
 import classes from "./Banner.module.css";
 
@@ -22,30 +23,30 @@ const Banner = ({text}) => {
     }
   };
 
-  useEffect(() => {
-    const geolocationSuccess = function (position) {
-      console.log(
-        `Your location is ${position.coords.latitude} ${position.coords.longitude}`
-      );
-    };
+  // useEffect(() => {
+  //   const geolocationSuccess = function (position) {
+  //     console.log(
+  //       `Your location is ${position.coords.latitude} ${position.coords.longitude}`
+  //     );
+  //   };
 
-    const geolocationFailure = error => {
-      // console.error(`Error : ${error.code} => ${error.message}`);
-      // alert('failed...')
-      return;
-    };
+  //   const geolocationFailure = error => {
+  //     // console.error(`Error : ${error.code} => ${error.message}`);
+  //     // alert('failed...')
+  //     return;
+  //   };
 
-    // Function to track user's location
-    if (navigator.geolocation) {
-      // After user agrees to turn on location
-      navigator.geolocation.getCurrentPosition(
-        geolocationSuccess,
-        geolocationFailure
-      );
-    } else {
-      console.log("Geoloaction is not supported in this browser");
-    }
-  }, []);
+  //   // Function to track user's location
+  //   if (navigator.geolocation) {
+  //     // After user agrees to turn on location
+  //     navigator.geolocation.getCurrentPosition(
+  //       geolocationSuccess,
+  //       geolocationFailure
+  //     );
+  //   } else {
+  //     console.log("Geoloaction is not supported in this browser");
+  //   }
+  // }, []);
 
   return (
     <div className={classes.banner}>
