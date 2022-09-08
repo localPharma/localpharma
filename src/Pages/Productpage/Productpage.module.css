@@ -1,0 +1,176 @@
+.product__page {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main__product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 80px;
+}
+
+.product_img {
+  width: 30%;
+  height: 400px;
+  background-color: aqua;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product_img img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.product__details {
+  width: 60%;
+  height: 400px;
+}
+
+.product__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.product__info {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* background-color: dodgerblue; */
+}
+
+.product__info ol {
+  padding: 10px 30px;
+  line-height: 1.5;
+
+}
+
+.product__hd {
+  width: 100%;
+}
+
+.product__name {
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+
+.product__brand {
+  font-size: 15px;
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.product__control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.product__qty {
+  width: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(211, 211, 211, 0.239);
+}
+
+.product__qty button {
+  flex: 1;
+  padding: 4px 9px;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid rgb(210, 210, 210);
+  background: transparent;
+  font-size: 18px;
+  border-radius: 7px;
+  font-weight: 500;
+  background-color: rgb(241, 240, 240);
+  color: black;
+}
+
+.product__qty span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product__about {
+  margin-top: 15px;
+  /* padding-bottom: 10px; */
+}
+
+.product__about h3 {
+  font-size: 19px;
+  padding-bottom: 7px;
+}
+
+.product__about p {
+  font-size: 14px;
+  max-width: 550px;
+  line-height: 1.5;
+}
+
+.product__about ol {
+  width: 100%;
+  max-width: 550px;
+}
+
+.product__about ol li {
+  font-size: 14px;
+  color: rgb(21, 21, 21);
+}
+
+.product__actions {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.product__actions button {
+  padding: 10px 35px;
+  font-size: 15px;
+  /* background: transparent; */
+  cursor: pointer;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.favBtn {
+  background-color: #fff;
+  border: 1px solid black;
+  transition: tranform 0.25s linear;
+}
+
+.favBtn:hover {
+  transform: scale(1.0.2);
+}
+
+.addToCart {
+  background-color: dodgerblue;
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 15px 35px;
+}

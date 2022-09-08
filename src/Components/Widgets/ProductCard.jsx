@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import classes from "./ProductCard.module.css";
 import CardImg from "../../assets/images (1).png";
 import { FaHeart } from "react-icons/fa";
-import { FavouriteItems } from "../../api/db";
+// import { FavouriteItems } from "../../api/db";
 // import { useDispatchCart } from "../../ContextAPI/CartContext";
 
 const ProductCard = (product) => {
@@ -13,11 +13,11 @@ const ProductCard = (product) => {
 
   // Function to add product to favourite cart
   const addToFav = (product) => {
-    localStorage.setItem("Favourites", JSON.stringify(FavouriteItems));
+    // localStorage.setItem("Favourites", JSON.stringify(FavouriteItems));
 
     // Checking if the added product exists in the FavouriteItems db...
     // let savedProduct =
-    FavouriteItems.push(product);
+    // FavouriteItems.push(product);
   };
 
   // Handle Add to Cart Functionality...

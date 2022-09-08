@@ -4,7 +4,8 @@
       "id": 1,
       "drug_name": "Dicloxacillin Sodium",
       "drug_brand": "Dicloxacillin Sodium",
-      "drug_company": "PD-Rx Pharmaceuticals, Inc."
+      "drug_company": "PD-Rx Pharmaceuticals, Inc.",
+      "price": "Ghc 2.00"
     },
     {
       "id": 2,
@@ -599,6 +600,12 @@
       "drug_name": "Uricum acidum, Benzoicum acidum, Berber. vulg., Bryonia,Cantharis, Carduus benedictus,Ceanothus, Chelidonium majus, Chionanthus virginica,Cinchona, Dioscorea, Dolichos, Iris versicolor, Juniperus com, Nux vom., Ptelea, Taraxacum, Carduus mar., Cynara scolymus, Solidago, Taraxacum",
       "drug_brand": "Cleanse Remedy Water",
       "drug_company": "Georgetown Health, LLC DBA EssentiaLife"
+    },
+    {
+      "id": 101
+    },
+    {
+      "id": 102
     }
   ]
 }

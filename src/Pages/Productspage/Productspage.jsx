@@ -10,18 +10,10 @@ import { FaSearch } from "react-icons/fa";
 const Productspage = () => {
   const [searchDrug, setSearchDrug] = useState("");
   const [filteredDrugs, setFilteredDrugs] = useState([]);
-  // const [activeTab, setActiveTab] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // const filterByTab = (type) => {
-  //   if (type) {
-  //     setActiveTab(true);
-  //     alert(type);
-  //   }
-  // };
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -29,7 +21,6 @@ const Productspage = () => {
       const resData = await products.json()
 
       setFilteredDrugs(resData)
-      // console.table(resData);
     }
 
     fetchProducts()
@@ -63,40 +54,29 @@ const Productspage = () => {
         {/* Filter Tabs */}
         <div className={classes.filterTabs}>
           <button
-            // onClick={() => filterByTab("all")}
             type="button"
             className={classes.filterTabsBtn}
           >
             All
           </button>
           <button
-            // onClick={() => filterByTab("headache")}
             type="button"
             className={classes.filterTabsBtn}
           >
             Headache
           </button>
           <button
-            // onClick={() => filterByTab("test")}
             type="button"
             className={classes.filterTabsBtn}
           >
             Tests
           </button>
           <button
-            // onClick={() => filterByTab("first aid")}
             type="button"
             className={classes.filterTabsBtn}
           >
             First Aids
           </button>
-          {/* <button
-            onClick={() => filterByTab("")}
-            type="button"
-            className={classes.filterTabsBtn}
-          >
-            
-          </button> */}
         </div>
         {/* Search Products */}
         <div className={classes.products}>

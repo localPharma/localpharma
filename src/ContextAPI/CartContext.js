@@ -1,15 +1,16 @@
 import React, { useContext, createContext, useReducer } from "react";
-// import { FavouriteItems } from "../api/db";
-
 const CartContext = createContext();
 const CartDispatchContext = createContext();
 
 const reducer = (state, action) => {
+  let quantity = 0
   switch (action.type) {
     case 'ADD TO CART':
       return [...state, action.item]
-    // case "ADD TO FAV":
-    //   return [...FavouriteItems, action.item]
+    case 'INCREASE':
+      return [...state, quantity + 1]
+    case "DECREASE": 
+      return [...state, action.item - 1]
     default:
       throw new Error("Failed...");
   }
