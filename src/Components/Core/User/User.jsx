@@ -39,7 +39,7 @@ const User = () => {
                 <UserAvatar displayName={displayName} photoUrl={photoURL} />
               </div>
               {/* Links */}
-              <Link to="/profile">
+              <Link to={`/profile/${displayName}`}>
                 Edit Profile
                 <span>
                   <FaChevronRight />
