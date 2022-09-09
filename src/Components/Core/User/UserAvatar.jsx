@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./UserAvatar.module.css";
 
-const UserAvatar = ({ displayName, photoUrl }) => {
+const UserAvatar = ({ displayName, photoUrl, email }) => {
   // Function to generate initials from userName is there is any...
   //  const getInitials = displayName => {
   //    displayName
@@ -19,35 +19,19 @@ const UserAvatar = ({ displayName, photoUrl }) => {
           <img src={photoUrl} alt="user avatar" className={classes.avatar} />
         ) : (
           <div className={classes.initials}>
-            {displayName
-              ?.split(" ")
-              ?.map((n) => n[0])
-              ?.join(".")}
+            {displayName ||
+              email
+                ?.split(" ")
+                ?.map((n) => n[0])
+                ?.join(".")}
           </div>
         )}
         <p className={classes.display_name}>
-          {displayName ? displayName : "Welcome User"}
+          {displayName || email ? displayName || email : "Welcome User"}
         </p>
       </div>
-      {/* <div className={classes.user__photo}>
-        <>
-          <img src={photoUrl} alt='' className={classes.avatar} />
-          <div className={classes.initials}>
-            {displayName
-              ?.split(" ")
-              .map(n => n[0])
-              .join(".")}
-          </div>
-        </>
-        {displayName}
-      </div> */}
     </div>
   );
 };
 
 export default UserAvatar;
-
-/* 
-
-
-*/

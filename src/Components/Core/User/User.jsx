@@ -13,7 +13,7 @@ const User = () => {
   const user = currentUser;
   const location = useLocation();
 
-  const { displayName, photoURL } = user;
+  const { displayName, photoURL, email } = user;
 
   const handleSignout = () => {
     logout()
@@ -36,7 +36,11 @@ const User = () => {
           <div className={classes.dropdown}>
             <div className={classes.dropdown__wrapper}>
               <div className={classes.dropdown__info}>
-                <UserAvatar displayName={displayName} photoUrl={photoURL} />
+                <UserAvatar
+                  displayName={displayName}
+                  photoUrl={photoURL}
+                  email={email}
+                />
               </div>
               {/* Links */}
               <Link to={`/profile/${displayName}`}>

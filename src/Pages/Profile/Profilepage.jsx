@@ -63,7 +63,7 @@ const Profilepage = () => {
           </div>
           <div className={classes.profile__field}>
             <h3>Joined at:</h3>
-            <p>{metadata.creationTime}</p>
+            <p>{metadata?.creationTime}</p>
           </div>
         </div>
       </div>

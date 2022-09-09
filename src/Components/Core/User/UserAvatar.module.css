@@ -42,4 +42,6 @@
 .display_name {
   text-transform: capitalize;
   font-size: 14px;
+  text-overflow: ellipsis;
+  word-wrap: none;
 }
