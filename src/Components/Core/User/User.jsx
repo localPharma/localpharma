@@ -49,7 +49,7 @@ const User = () => {
                   <FaChevronRight />
                 </span>
               </Link>
-              <Link to="/history">
+              <Link to={`/history/${displayName}`}>
                 History
                 <span>
                   <FaChevronRight />

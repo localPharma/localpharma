@@ -20,6 +20,7 @@ import Productspage from "./Pages/Productspage/Productspage";
 import Productpage from "./Pages/Productpage/Productpage";
 import Cartpage from "./Pages/Cartpage/Cartpage";
 import Profilepage from "./Pages/Profile/Profilepage";
+import Historypage from "./Pages/Historypage/Historypage";
 
 const AppRouter = () => {
   return (
@@ -33,6 +34,7 @@ const AppRouter = () => {
           <Route path="/cart" component={Cartpage} />
           <Route path="/pharmacypage/:id" component={Pharmacypage} />
           <ProtectedRoute path="/profile/:id" component={Profilepage} />
+          <ProtectedRoute path="/history/:id" component={Historypage} />
           <Route path="/products" component={Productspage} />
           <Route path="/product/:id" component={Productpage} />
           <ProtectedRoute path="/auth/signup" component={Signup} />
