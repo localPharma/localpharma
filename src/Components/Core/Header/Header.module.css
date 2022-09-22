@@ -42,11 +42,11 @@
   border-radius: 5px;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .nav .nav__link {

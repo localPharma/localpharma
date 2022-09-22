@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import Banner from "../../Components/Core/Banner/Banner";
+import Footer from "../../Components/Core/Footer/Footer";
 import Header from "../../Components/Core/Header/Header";
 import CreatePharmacy from "../../Components/CreatePharmacy/CreatePharmacy";
-import MostPopular from '../../Components/MostPopularProducts/MostPopular'
+import MostPopular from "../../Components/MostPopularProducts/MostPopular";
 
 const Pharmaciespage = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Pharmaciespage = () => {
       <Banner text="Our Pharmacy Vendors" />
       <MostPopular allowSlice={false} />
       <CreatePharmacy />
+      <Footer />
     </div>
   );
 };

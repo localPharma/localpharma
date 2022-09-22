@@ -16,9 +16,9 @@ const Cartpage = () => {
     history.goBack();
   };
 
-  // Function to get all items from the Cart and display them...
-
-  // const handleRemove = () => {};
+  const confirmCheckout = () => {
+    history.push("checkout");
+  };
 
   return (
     <>
@@ -43,7 +43,9 @@ const Cartpage = () => {
                   <FaShoppingCart /> My cart
                 </div>
                 <div className={classes.confirm__cart}>
-                  <button type="button">Confirm</button>
+                  <button type="button" onClick={confirmCheckout}>
+                    Proceed to Checkout
+                  </button>
                 </div>
               </div>
               {items.length === 0 ? (
@@ -54,12 +56,8 @@ const Cartpage = () => {
                 <>
                   <div className={classes.cart__lists}>
                     {/* Cart Lists */}
-                    {items.map((item, index ) => (
-                      <CartItem
-                        index={index}
-                        product={item}
-                        key={index}
-                      />
+                    {items.map((item, index) => (
+                      <CartItem index={index} product={item} key={index} />
                     ))}
                   </div>
                 </>

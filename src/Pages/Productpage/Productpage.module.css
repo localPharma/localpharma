@@ -59,16 +59,19 @@
 .product__info ol {
   padding: 10px 30px;
   line-height: 1.5;
-
 }
 
 .product__hd {
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .product__name {
   font-size: 30px;
   padding-bottom: 7px;
+  text-transform: capitalize;
 }
 
 .product__brand {
@@ -164,7 +167,7 @@
 }
 
 .favBtn:hover {
-  transform: scale(1.0.2);
+  transform: scale(1.2);
 }
 
 .addToCart {

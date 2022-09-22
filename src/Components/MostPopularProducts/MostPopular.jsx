@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import classes from "./MostPopular.module.css";
 import { Link } from "react-router-dom";
 import CardImg from "../../assets/pharm1.jfif";
-import { pharmacies } from "../../api/pharmacies";
+// import { pharmacies } from "../../api/pharmacies";
 
 const MostPopular = ({ allowSlice }) => {
+  const [pharmacies, setPharmacies] = useState([]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    console.log("useEffect...");
+  }, []);
+
+  useLayoutEffect(() => {
+    const fetchProducts = async () => {
+      const pharmacies = await fetch(`http://localhost:4000/pharmacies`);
+      const resData = await pharmacies.json();
+
+      setPharmacies(resData);
+    };
+
+    fetchProducts();
+
+    console.log("useLayoutEffect...");
+  }, []);
   return (
     <div className={classes.most__popular}>
       <div className={classes.title}>
@@ -14,21 +33,21 @@ const MostPopular = ({ allowSlice }) => {
         {allowSlice ? (
           <>
             {pharmacies
-              .map(({ id, name, location, working_days, imgUrl }) => (
+              ?.map(({ id, name, location, working_days, logo }) => (
                 <Card
                   key={id}
                   id={id}
                   pharmacy_name={name}
                   location={location}
                   working_days={working_days}
-                  imgUrl={imgUrl}
+                  imgUrl={logo}
                 />
               ))
               .slice(0, 6)}
           </>
         ) : (
           <>
-            {pharmacies.map(({ id, name, location, working_days, imgUrl }) => (
+            {pharmacies?.map(({ id, name, location, working_days, imgUrl }) => (
               <Card
                 key={id}
                 id={id}

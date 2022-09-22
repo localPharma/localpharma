@@ -14,37 +14,36 @@ const ProductCard = (product) => {
   // Function to add product to favourite cart
   const addToFav = (product) => {
     // localStorage.setItem("Favourites", JSON.stringify(FavouriteItems));
-
     // Checking if the added product exists in the FavouriteItems db...
     // let savedProduct =
     // FavouriteItems.push(product);
   };
 
   // Handle Add to Cart Functionality...
-  // 
+  //
   return (
     <div className={classes.product__card}>
       <div className={classes.product__img}>
         {product.prodImg ? (
-          <img src={product.prodImg} alt={product.prodName} />
+          <img src={product?.prodImg} alt={product?.prodName} loading="lazy" />
         ) : (
-          <img src={CardImg} alt={product.prodName} />
+          <img src={CardImg} alt={product?.prodName} loading="lazy" />
         )}
       </div>
       <button
         type="button"
         className={classes.favBtn}
-        onClick={() => addToFav(product.product.id)}
+        onClick={() => addToFav(product?.product.id)}
       >
         <FaHeart className={classes.favIcon} />
       </button>
       <Link
-        to={`/product/${product.product.id}`}
+        to={`/product/${product?.product.id}`}
         className={classes.product__details}
       >
-        <h3>{product.product.drug_name}</h3>
+        <h3>{product?.product.drug_name.toLowerCase()}</h3>
         <div>
-          <p className={classes.prod__brand}>{product.product.drug_brand}</p>
+          <p className={classes.prod__brand}>{product?.product.drug_brand}</p>
           {/* <p className={classes.prod__price}>
             <b>{product.prodPrice}</b>
           </p> */}

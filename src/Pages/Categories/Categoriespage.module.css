@@ -10,10 +10,11 @@
 .categories__hd {
   text-align: center;
   padding: 15px 0;
+  padding-top: 0;
 }
 
 .categories__hd h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .categories__tabs {
@@ -41,7 +42,6 @@
   color: white;
 }
 
-
 .categories__tabs .active {
   background-color: dodgerblue;
   color: white;
@@ -49,13 +49,15 @@
 
 .category__list {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding:0 130px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* align-items: center;
+  justify-content: center; */
+  gap: 20px;
+  padding: 0 130px;
   margin: 0 auto;
   max-width: 1440px;
+  margin-bottom: 100px;
 }
 
 .category__list a {
@@ -63,12 +65,27 @@
   overflow: hidden;
   padding-bottom: 15px;
   transition: all 0.25s linear;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .category__list a:hover {
   transform: scale(1.02);
 }
 
-.category__list a p{
+.category__list a p {
   margin: 10px;
+  font-size: 18px;
+}
+
+.category__img {
+  width: 100%;
+}
+
+.category__img img {
+  width: 100%;
 }

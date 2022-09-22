@@ -16,6 +16,13 @@ const Productpage = () => {
   const dispatch = useDispatchCart();
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  useEffect(() => {
     const fetchProduct = (id) => {
       try {
         fetch(`http://localhost:4000/products/${id}`)
@@ -37,7 +44,7 @@ const Productpage = () => {
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
-    handleAddToCart(id)
+    handleAddToCart(id);
   };
 
   const decreaseQuantity = () => {

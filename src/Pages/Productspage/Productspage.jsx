@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import classes from "./Productspage.module.css";
 import Header from "../../Components/Core/Header/Header";
 import Footer from "../../Components/Core/Footer/Footer";
-// import { drugs } from "../../api/products";
 import ProductCard from "../../Components/Widgets/ProductCard";
 import { FaSearch } from "react-icons/fa";
 
@@ -12,20 +11,22 @@ const Productspage = () => {
   const [filteredDrugs, setFilteredDrugs] = useState([]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const fetchProducts = async () => {
-      const products = await fetch('http://localhost:4000/products')
-      const resData = await products.json()
+      const products = await fetch("http://localhost:4000/products");
+      const resData = await products.json();
 
-      setFilteredDrugs(resData)
-    }
+      setFilteredDrugs(resData);
+    };
 
-    fetchProducts()
-
-  }, [])
+    fetchProducts();
+  }, []);
 
   return (
     <>
@@ -38,7 +39,7 @@ const Productspage = () => {
               <input
                 type="search"
                 name="searchbox"
-                placeholder="Search for your drugs "
+                placeholder="Search for your drugs"
                 required
                 value={searchDrug}
                 onChange={(e) => setSearchDrug(e.target.value)}
@@ -52,44 +53,25 @@ const Productspage = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className={classes.filterTabs}>
-          <button
-            type="button"
-            className={classes.filterTabsBtn}
-          >
+        {/* <div className={classes.filterTabs}>
+          <button type="button" className={classes.filterTabsBtn}>
             All
           </button>
-          <button
-            type="button"
-            className={classes.filterTabsBtn}
-          >
+          <button type="button" className={classes.filterTabsBtn}>
             Headache
           </button>
-          <button
-            type="button"
-            className={classes.filterTabsBtn}
-          >
+          <button type="button" className={classes.filterTabsBtn}>
             Tests
           </button>
-          <button
-            type="button"
-            className={classes.filterTabsBtn}
-          >
+          <button type="button" className={classes.filterTabsBtn}>
             First Aids
           </button>
-        </div>
+        </div> */}
         {/* Search Products */}
         <div className={classes.products}>
           {filteredDrugs.map((product, index) => (
             // ...drug product card
-            <ProductCard
-              key={index}
-              id={index}
-              product={product}
-              // prodId={id}
-              // prodName={drug_name}
-              // prodBrand={drug_brand}
-            />
+            <ProductCard key={index} id={index} product={product} />
           ))}
         </div>
       </div>

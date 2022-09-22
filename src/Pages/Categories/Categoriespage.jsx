@@ -45,17 +45,35 @@ const Categoriespage = () => {
             </div>
             <p>Buy Medicine</p>
           </Link>
-          <Link to="/ask-pharmacist">
+          <Link to="/comingsoon">
             <div className={classes.category__img}>
               <img src={CategoryImg} alt="" />
             </div>
             <p>Ask a Pharmacist</p>
           </Link>
-          <Link to="/first-aid">
+          <Link to="/comingsoon">
             <div className={classes.category__img}>
               <img src={CategoryImg} alt="" />
             </div>
-            <p>First Aid Toolkits</p>
+            <p>Lab Tests</p>
+          </Link>
+          <Link to="/comingsoon">
+            <div className={classes.category__img}>
+              <img src={CategoryImg} alt="" />
+            </div>
+            <p>Upload Prescriptions</p>
+          </Link>
+          <Link to="/comingsoon">
+            <div className={classes.category__img}>
+              <img src={CategoryImg} alt="" />
+            </div>
+            <p>Dental and Oral Products</p>
+          </Link>
+          <Link to="/comingsoon">
+            <div className={classes.category__img}>
+              <img src={CategoryImg} alt="" />
+            </div>
+            <p>Mini Mart</p>
           </Link>
         </section>
       </div>

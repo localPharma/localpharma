@@ -27,13 +27,13 @@
     },
     {
       "id": 5,
-      "drug_name": "Valsartan and Hydrochlorothiazide",
+      "drug_name": "Valsartan",
       "drug_brand": "Valsartan and Hydrochlorothiazide",
       "drug_company": "Aurobindo Pharma Limited"
     },
     {
       "id": 6,
-      "drug_name": "Pigweed, Rough Redroot Amaranthus retroflexus",
+      "drug_name": "Pigweed",
       "drug_brand": "Pollens - Weeds and Garden Plants, Pigweed, Rough Redroot Amaranthus retroflexus",
       "drug_company": "Jubilant HollisterStier LLC"
     },
@@ -45,7 +45,7 @@
     },
     {
       "id": 8,
-      "drug_name": "Arsenicum Album, Belladonna, Calcarea Fluorica, Calcarea Sulphurica, Echinacea, Hepar Sulphuris Calcareum, Lachesis Mutus, Nux Moschata, Silicea, Sulphur Iodatum, Thymus Gland",
+      "drug_name": "Arsenicum",
       "drug_brand": "Progena",
       "drug_company": "Meditrend, Inc. DBA Progena Professional Formulations"
     },
@@ -81,13 +81,13 @@
     },
     {
       "id": 14,
-      "drug_name": "ARNICA MONTANA and TOXICODENDRON PUBESCENS LEAF and SOLANUM DULCAMARA STEM and SYMPHYTUM TUBEROSUM ROOT and SULFUR and SANGUINARIA CANADENSIS ROOT and SUS SCROFA CARTILAGE and SUS SCROFA EMBRYO and SU",
+      "drug_name": "ARNICA MONTANA",
       "drug_brand": "Zeel",
       "drug_company": "Hameln Pharma GmbH"
     },
     {
       "id": 15,
-      "drug_name": "SEPIA OFFICINALIS JUICE and ALETRIS FARINOSA ROOT and ANAMIRTA COCCULUS SEED and CHAMAELIRIUM LUTEUM ROOT and POTASSIUM CARBONATE and SODIUM CHLORIDE and QUININE ARSENATE and PICRIC ACID and",
+      "drug_name": "SEPIA JUICE",
       "drug_brand": "Aletris - Heel",
       "drug_company": "Heel Inc"
     },
@@ -117,7 +117,7 @@
     },
     {
       "id": 20,
-      "drug_name": "OCTOCRYLENE, OCTISALATE, AVOBENZONE, OCTINOXATE",
+      "drug_name": "OCTOCRYLENE",
       "drug_brand": "stila CC color correcting broad-spectrum SPF 20 07 DARK",
       "drug_company": "Stila Styles, LLC"
     },
@@ -141,7 +141,7 @@
     },
     {
       "id": 24,
-      "drug_name": "Ferrum metallicum, Gratiola officinalis, Hamamelis virginiana, Helianthus annuus, Hottonia palustris, flos, Lachesis mutus, Lilium tigrinum, Lycopodium clavatum, Moschus, Palladium metallicum, Platinum metallicum, Rhus toxicodendron, Staphysagria, Sulphur, Veratrum album, Viola odorata",
+      "drug_name": "Ferrum metallicum",
       "drug_brand": "Prejudiced",
       "drug_company": "King Bio Inc."
     },
@@ -153,7 +153,7 @@
     },
     {
       "id": 26,
-      "drug_name": "Festuca elatior pollen",
+      "drug_name": "Festuca pollen",
       "drug_brand": "STANDARDIZED MEADOW FESCUE GRASS POLLEN",
       "drug_company": "Allergy Laboratories, Inc."
     },
@@ -165,7 +165,7 @@
     },
     {
       "id": 28,
-      "drug_name": "Potassium Chloride and Sodium Chloride",
+      "drug_name": "Potassium Chloride",
       "drug_brand": "Potassium Chloride in Sodium Chloride",
       "drug_company": "Baxter Healthcare Corporation"
     },
@@ -225,7 +225,7 @@
     },
     {
       "id": 38,
-      "drug_name": "Bacitracin Zinc, Neomycin Sulfate, Polymyxin B Sulfate, and Pramoxine Hydrochloride",
+      "drug_name": "Bacitracin Zinc",
       "drug_brand": "Neosporin Plus Pain Relief Maximum Strength",
       "drug_company": "Johnson & Johnson Consumer Products Company, Division of Johnson & Johnson Consumer Companies, Inc."
     },
@@ -237,7 +237,7 @@
     },
     {
       "id": 40,
-      "drug_name": "chlordiazepoxide and amitriptyline hydrochloride",
+      "drug_name": "chlordiazepoxide",
       "drug_brand": "Chlordiazepoxide and Amitriptyline Hydrochloride",
       "drug_company": "Mylan Pharmaceuticals Inc."
     },
@@ -249,13 +249,13 @@
     },
     {
       "id": 42,
-      "drug_name": "carvedilol phosphate",
+      "drug_name": "Carvedilol phosphate",
       "drug_brand": "COREG",
       "drug_company": "Carilion Materials Management"
     },
     {
       "id": 43,
-      "drug_name": "Titanium Dioxide and Zinc Oxide",
+      "drug_name": "Titanium Dioxide",
       "drug_brand": "MDSolarSciences SPF50 Plus Ultra Mineral Screen",
       "drug_company": "Ecometics, Inc"
     },
@@ -285,13 +285,13 @@
     },
     {
       "id": 48,
-      "drug_name": "Solbar Thirty SPF30",
+      "drug_name": "Solbar Thirty",
       "drug_brand": "Solbar Thirty SPF 30",
       "drug_company": "Person and Covey"
     },
     {
       "id": 49,
-      "drug_name": "NOT APPLICABLE",
+      "drug_name": "Amphemanin Xtra",
       "drug_brand": "Fungal Plus",
       "drug_company": "Dr Elena Morreale"
     },
@@ -315,7 +315,7 @@
     },
     {
       "id": 53,
-      "drug_name": "Mineral oil, Petrolatum, Phenylephrine HCl, Shark liver oil",
+      "drug_name": "Mineral oil",
       "drug_brand": "Healthy Accents Hemorrhoidal",
       "drug_company": "DZA Brands LLC"
     },
@@ -339,7 +339,7 @@
     },
     {
       "id": 57,
-      "drug_name": "avobenzone, homosalate, octisalate, ocrylene and oxybenzone",
+      "drug_name": "Avobenzone",
       "drug_brand": "Sei Bella",
       "drug_company": "Melaleuca, Inc."
     },
@@ -381,7 +381,7 @@
     },
     {
       "id": 64,
-      "drug_name": "Amoxicillin and Clavulanate Potassium",
+      "drug_name": "Amoxicillin",
       "drug_brand": "Amoxicillin and Clavulanate Potassium",
       "drug_company": "Sandoz Inc"
     },
@@ -399,13 +399,13 @@
     },
     {
       "id": 67,
-      "drug_name": "SUNSCREEN, TITANIUM DIOXIDE, ZINC OXIDE",
+      "drug_name": "SUNSCREEN",
       "drug_brand": "OI LIN DEEP MOISTURE SUNSCREEN SPF 25",
       "drug_company": "Sunrider Manufacturing L.P."
     },
     {
       "id": 68,
-      "drug_name": "Acetaminophen, Caffeine and Pyrilamine maleate",
+      "drug_name": "Acetaminophen",
       "drug_brand": "Maximum Strength Menstrual Relief",
       "drug_company": "DOLGENCORP, LLC"
     },
@@ -423,7 +423,7 @@
     },
     {
       "id": 71,
-      "drug_name": "AVOBENZONE, OCTINOXATE",
+      "drug_name": "AVOBENZONE",
       "drug_brand": "Fresh Sugar Tulip Tinted Lip Treatment Sunscreen SPF 15",
       "drug_company": "Fresh, Inc."
     },
@@ -441,19 +441,19 @@
     },
     {
       "id": 74,
-      "drug_name": "acetaminophen,dextromethorphan HBr, doxylamine succinate",
+      "drug_name": "acetaminophen",
       "drug_brand": "smart sense nighttime cold and flu relief",
       "drug_company": "Kmart Corporation"
     },
     {
       "id": 75,
-      "drug_name": "Allergenic Extracts Alum Precipitated",
+      "drug_name": "Allergenic Precipitated",
       "drug_brand": "CENTER-AL - CARYA OVATA POLLEN",
       "drug_company": "ALK-Abello, Inc."
     },
     {
       "id": 76,
-      "drug_name": "Hypericum perforatum, Phytolacca decandra, Guaiacum, Ledum palustre, Conium maculatum,",
+      "drug_name": "Hypericum perforatum",
       "drug_brand": "Back and Neck Rescue",
       "drug_company": "Apotheca Company"
     },
@@ -471,13 +471,13 @@
     },
     {
       "id": 79,
-      "drug_name": "Brompheniramine Maleate, Codeine Phosphate, and Phenylephrine Hydrochloride",
+      "drug_name": "Brompheniramine",
       "drug_brand": "Pluratuss",
       "drug_company": "Creekwood Pharmaceutical, Inc."
     },
     {
       "id": 80,
-      "drug_name": "Allergenic Extracts Alum Precipitated",
+      "drug_name": "Allergenic",
       "drug_brand": "CENTER-AL - POA PRATENSIS POLLEN",
       "drug_company": "ALK-Abello, Inc."
     },
@@ -519,31 +519,31 @@
     },
     {
       "id": 87,
-      "drug_name": "Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone",
+      "drug_name": "Avobenzone",
       "drug_brand": "RoC Multi correxion Lift Anti Gravity Day Moisturizer",
       "drug_company": "Johnson & Johnson Sante Beaute- France"
     },
     {
       "id": 88,
-      "drug_name": "Acetaminophen, Phenylephrine HCl and Dextromethorphan HBr",
+      "drug_name": "Acetaminophen",
       "drug_brand": "Cold Relief Daytime Multi-Symptom",
       "drug_company": "WOONSOCKET PRESCRIPTION CENTER,INCORPORATED"
     },
     {
       "id": 89,
-      "drug_name": "alpha-1 proteinase inhibitor human",
+      "drug_name": "Proteinase human",
       "drug_brand": "Aralast",
       "drug_company": "Baxter Healthcare Corporation"
     },
     {
       "id": 90,
-      "drug_name": "Ammonium carbonicum, Antimonium arsenicicum, Antimonium tartaricum, Arsenicum album, Bromium, Carbo vegetabilis, Chlorinum, Kali carbonicum, Lobelia inflata, Stannum metallicum, Sulphuricum acidum",
+      "drug_name": "Ammonium carbonicum",
       "drug_brand": "Lungs and Bronchial Relief",
       "drug_company": "New Sun Inc."
     },
     {
       "id": 91,
-      "drug_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+      "drug_name": "AMOXICILLIN",
       "drug_brand": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
       "drug_company": "STAT RX USA LLC"
     },
@@ -561,7 +561,7 @@
     },
     {
       "id": 94,
-      "drug_name": "Octocrylene and Oxybenzone and Avobenzone",
+      "drug_name": "Octocrylene",
       "drug_brand": "Banana Boat Sport SPF 60",
       "drug_company": "Accra-Pac, Inc."
     },
@@ -585,27 +585,103 @@
     },
     {
       "id": 98,
-      "drug_name": "Number Four Mold Mixture",
-      "drug_brand": "Number Four Mold Mixture",
+      "drug_name": "Mold Mixture",
+      "drug_brand": "Number Four",
       "drug_company": "Antigen Laboratories, Inc."
     },
     {
       "id": 99,
-      "drug_name": "Chlorhexidine Gluconate and Isopropyl Alcohol",
+      "drug_name": "Chlorhexidine Alcohol",
       "drug_brand": "Prevantics Swab",
       "drug_company": "Professional Disposables International, Inc."
     },
     {
       "id": 100,
-      "drug_name": "Uricum acidum, Benzoicum acidum, Berber. vulg., Bryonia,Cantharis, Carduus benedictus,Ceanothus, Chelidonium majus, Chionanthus virginica,Cinchona, Dioscorea, Dolichos, Iris versicolor, Juniperus com, Nux vom., Ptelea, Taraxacum, Carduus mar., Cynara scolymus, Solidago, Taraxacum",
+      "drug_name": "Uricum acidum",
       "drug_brand": "Cleanse Remedy Water",
       "drug_company": "Georgetown Health, LLC DBA EssentiaLife"
+    }
+  ],
+  "pharmacies": [
+    {
+      "id": 1,
+      "name": "Adom Pharma",
+      "working_hours": "8:00am - 6:00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
     },
     {
-      "id": 101
+      "id": 2,
+      "name": "Grace Pharmaceuticals",
+      "working_hours": "9:00am - 4:00pm",
+      "logo": "",
+      "location": "Madina",
+      "website": "https://www.gracepharmaceuticals.com"
     },
     {
-      "id": 102
+      "id": 3,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 4,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 5,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 6,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 7,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 8,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 9,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
+    },
+    {
+      "id": 10,
+      "name": "Adom Pharma",
+      "working_hours": "8: 00am - 6: 00pm",
+      "logo": "",
+      "location": "Adenta",
+      "website": "https://www.adom.com"
     }
   ]
 }

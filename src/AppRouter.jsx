@@ -21,6 +21,9 @@ import Productpage from "./Pages/Productpage/Productpage";
 import Cartpage from "./Pages/Cartpage/Cartpage";
 import Profilepage from "./Pages/Profile/Profilepage";
 import Historypage from "./Pages/Historypage/Historypage";
+import ComingSoon from "./Pages/ComingSoon/ComingSoon";
+import About from "./Pages/About/About";
+import Checkoutpage from "./Pages/Checkoutpage/Checkoutpage";
 
 const AppRouter = () => {
   return (
@@ -29,8 +32,10 @@ const AppRouter = () => {
         {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/about" component={About} />
           <Route path="/pharmacies" component={Pharmaciespage} />
           <Route path="/categories" component={Categoriespage} />
+          <Route path="/checkout" component={Checkoutpage} />
           <Route path="/cart" component={Cartpage} />
           <Route path="/pharmacypage/:id" component={Pharmacypage} />
           <ProtectedRoute path="/profile/:id" component={Profilepage} />
@@ -51,6 +56,7 @@ const AppRouter = () => {
           />
           <Route path="/auth/open-pharmacy" component={Vendorsignup} />
           <Route path="/auth/login-pharmacy" component={Vendorsignin} />
+          <Route path="/comingsoon" component={ComingSoon} />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>

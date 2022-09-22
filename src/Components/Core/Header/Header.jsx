@@ -52,19 +52,19 @@ const Header = () => {
           Categories
         </NavLink>
         <NavLink
-          to="/ask-a-doctor"
+          to="/comingsoon"
           className={classes.nav__link}
           activeStyle={activeStyle}
         >
           Ask a Doctor
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/about"
           className={classes.nav__link}
           activeStyle={activeStyle}
         >
           About
-        </NavLink>
+        </NavLink> */}
       </nav>
 
       {/* Auth */}

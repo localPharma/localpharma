@@ -20,16 +20,24 @@ const Footer = () => {
         <div className={classes.footer__links}>
           <div className={classes.links}>
             <h3>Links</h3>
-            <Link to="/">About</Link>
-            <Link to="/">About</Link>
-            <Link to="/">About</Link>
-            <Link to="/">About</Link>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/pharmacies">Pharmacies</Link>
+            <Link to="/categories">Categories</Link>
+            {/* <Link to="/">Create a pharmacy</Link> */}
+            <a
+              href="https://local-pharma-dashboard.vercel.app"
+              target="_parent"
+              className={classes.open__pharmacy}
+              rel="noreferrer"
+            >
+              Create pharmacy
+            </a>
           </div>
           <div className={classes.misc}>
             <h3>Company</h3>
-            <Link to="/">About</Link>
-            <Link to="/">About</Link>
+            <Link to="/comingsoon">Terms and Conditions</Link>
+            <Link to="/comingsoon">Privacy Policy</Link>
             <Link to="/">About</Link>
             <Link to="/">About</Link>
             <Link to="/">About</Link>
