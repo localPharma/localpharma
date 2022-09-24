@@ -42,18 +42,18 @@ const Productpage = () => {
     dispatch({ type: "ADD TO CART", id });
   };
 
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-    handleAddToCart(id);
-  };
+  // const increaseQuantity = () => {
+  //   setQuantity(quantity + 1);
+  //   handleAddToCart(id);
+  // };
 
-  const decreaseQuantity = () => {
-    if (quantity <= 1) {
-      setQuantity(1);
-    } else {
-      setQuantity(quantity - 1);
-    }
-  };
+  // const decreaseQuantity = () => {
+  //   if (quantity <= 1) {
+  //     setQuantity(1);
+  //   } else {
+  //     setQuantity(quantity - 1);
+  //   }
+  // };
 
   return (
     <>
@@ -74,7 +74,7 @@ const Productpage = () => {
                     {selectedProduct.drug_brand}
                   </p>
                 </div>
-                <div className={classes.product__control}>
+                {/* <div className={classes.product__control}>
                   <div className={classes.product__qty}>
                     <button
                       type="button"
@@ -91,7 +91,7 @@ const Productpage = () => {
                   <div className={classes.product__price}>
                     <h3>{selectedProduct.price}</h3>
                   </div>
-                </div>
+                </div> */}
                 <div className={classes.product__about}>
                   <h3>About product</h3>
                   <p>
@@ -118,9 +118,9 @@ const Productpage = () => {
                 </div>
               </div>
               <div className={classes.product__actions}>
-                <button type="button" className={classes.favBtn}>
+                {/* <button type="button" className={classes.favBtn}>
                   Add to Favourites
-                </button>
+                </button> */}
                 <button
                   type="button"
                   onClick={() => handleAddToCart(id)}

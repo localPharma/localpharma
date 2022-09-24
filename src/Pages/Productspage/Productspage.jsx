@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import classes from "./Productspage.module.css";
 import Header from "../../Components/Core/Header/Header";
 import Footer from "../../Components/Core/Footer/Footer";
 import ProductCard from "../../Components/Widgets/ProductCard";
 import { FaSearch } from "react-icons/fa";
+// import {db} from '.././../Firebase/firebase.config'
 
 const Productspage = () => {
   const [searchDrug, setSearchDrug] = useState("");
